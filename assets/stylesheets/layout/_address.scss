@@ -1,0 +1,88 @@
+.address {
+  margin: 8em 0 0;
+  padding: 0 5vw;
+
+  @include extra-small {
+    padding: 0;
+  }
+
+  .addrs-title {
+    font-family: Raleway-SemiBold;
+    font-size: 8em;
+    margin-bottom: 0.6em;
+
+    @include medium {
+      font-size: 7em;
+    }
+
+    @include small {
+      font-size: 5em;
+    }
+  }
+
+  .addrs-map {
+    height: 635px;
+    margin: 0 auto;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    @include small {
+      height: 600px;
+    }
+
+    @include extra-small {
+      height: 460px;
+    }
+
+    .googleMap {
+      border-radius: 10px;
+      height: 530px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+
+      @include extra-small {
+        height: 380px;
+      }
+    }
+
+    .addrs-circle {
+      background-color: $white;
+      border-radius: 50%;
+      height: 500px;
+      margin: 480px auto 0;
+      padding-top: 50px;
+      position: relative;
+      text-align: center;
+      width: 500px;
+      z-index: 2;
+
+      @include small {
+        height: 290px;
+        width: 290px;
+      }
+
+      @include extra-small {
+        margin: 340px auto 0;
+      }
+    }
+
+    .addrs-name {
+      color: $sicar-green;
+      font-family: Raleway-SemiBold;
+      font-size: 1.8em;
+      margin: 0;
+    }
+
+    .addrs-address {
+      color: $black;
+      font-family: Raleway-Regular;
+      font-size: 1.8em;
+      margin: 0;
+    }
+  }
+}

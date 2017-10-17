@@ -1,0 +1,30 @@
+{
+  "name": "sicarfarms",
+  "version": "1.0.0",
+  "description": "It's all about fresh produce",
+  "main": "app.js",
+  "scripts": {
+    "test": "Hello World!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tribecx/SicarFarms.git"
+  },
+  "keywords": [
+    "sicar",
+    "farms",
+    "sicarfarms"
+  ],
+  "author": "Alan Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tribecx/SicarFarms/issues"
+  },
+  "homepage": "https://github.com/tribecx/SicarFarms#readme",
+  "dependencies": {
+    "express": "^4.16.1",
+    "i18n": "^0.8.3",
+    "owl.carousel": "^2.2.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}

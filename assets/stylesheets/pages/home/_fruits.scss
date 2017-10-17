@@ -1,0 +1,23 @@
+.fruits {
+  @include linear-gradient($honey,$lemon-mx);
+
+  color: $white;
+  padding: 20em 15px 0 15px;
+  text-align: center;
+  width: 100%;
+
+  .slogan {
+    background: url('../../../images/home/slogan-bg.png') center/contain no-repeat;
+    display: inline-block;
+    height: 59vw;
+    margin: 8em 0;
+    max-height: 468px;
+    max-width: 675px;
+    width: 90%;
+
+    .slogan-text {
+      background: url('../../../images/home/slogan.svg') center/contain no-repeat;
+      height: 100%;
+    }
+  }
+}

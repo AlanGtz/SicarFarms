@@ -1,0 +1,100 @@
+.footer {
+  background: url('../../../images/footer-bg.png') right bottom/60% no-repeat;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+
+  .footer-logo {
+    max-width: 395px;
+    width: 100%;
+  }
+
+  .footer-nav {
+    font-family: Raleway-SemiBold;
+    margin: 40px 0 0 50px;
+
+    .nav-label {
+      color: $grass;
+      font-size: 2.2em;
+      margin: 0.5em 0;
+    }
+
+    .nav-item {
+      color: $sicar-green;
+      font-size: 1.8em;
+    }
+  }
+
+  .nav-left, .nav-right {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px;
+  }
+
+  .nav-left {
+    margin-right: 4.5em;
+
+    .nav-item {
+      line-height: 2.23em;
+    }
+  }
+
+  .nav-right {
+    .nav-item {
+      line-height: 1.66em;
+    }
+  }
+
+  .footer-info {
+    font-size: 1.8em;
+    margin: 40px 0 0 50px;
+
+    .info-title {
+      color: $sicar-green;
+      font-family: Raleway-SemiBold;
+      margin: 0;
+    }
+
+    .info-address {
+      font-family: Raleway-Regular;
+      margin: 0;
+    }
+  }
+
+  .footer-social {
+    margin: 20px 0 0 50px;
+
+    .social-item {
+      display: inline-block;
+      height: 20px;
+      margin-right: 12px;
+      width: 24px;
+    }
+
+    .social-facebook {
+      background: url('../../../images/icons/facebook-green.svg') center/contain no-repeat;
+    }
+
+    .social-youtube {
+      background: url('../../../images/icons/youtube-green.svg') center/contain no-repeat;
+    }
+
+    .social-vimeo {
+      background: url('../../../images/icons/vimeo-green.svg') center/contain no-repeat;
+    }
+
+    .social-twitter {
+      background: url('../../../images/icons/twitter-green.svg') center/contain no-repeat;
+    }
+  }
+
+  .goto-ceiling {
+    background: url('../../../images/icons/ceiling.svg') center/contain no-repeat;
+    border-radius: 50%;
+    bottom: 30px;
+    height: 60px;
+    position: absolute;
+    right: 35px;
+    width: 60px;
+  }
+}

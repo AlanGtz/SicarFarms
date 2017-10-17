@@ -1,0 +1,20 @@
+.contact
+  h3.contact-title Me interesa
+  form.contact-form
+    .form-text
+      input.form-input(type="text" name="nombre" id="nombre" placeholder="Nombre")
+    .form-text
+      input.form-input(type="email" name="email" id="email" placeholder="E-mail")
+    .form-select
+      select.form-input(name="interest" id="interest" placeholder="Fruta")
+        option(value="Fruta")
+        option(value="lemon-mx") Limón Mexicano
+        option(value="lemon-ps") Limón Persa
+        option(value="tomatoe") Tomate Roma
+        option(value="pineapple") Piña Miel (MD2)
+        option(value="coconut") Coco Destopado
+        option(value="tamarind") Tamarindo
+    .form-subject
+      input.form-input(type="text" name="subject" id="subject" placeholder="Asunto")
+    .form-btn
+      input.form-submit(type="submit" name="submit" value="Enviar")

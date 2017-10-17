@@ -1,0 +1,92 @@
+.contact {
+  display: block;
+  margin: 7vw auto 9vw;
+  max-width: 900px;
+  width: 100%;
+
+  .contact-title {
+    color: $sicar-green;
+    font-family: Raleway-SemiBold;
+    font-size: 6.4em;
+    margin: 0 0 0.6em;
+    text-align: center;
+
+    @include medium {
+      font-size: 5em;
+    }
+
+    @include small {
+      font-size: 4em;
+    }
+  }
+
+  .contact-form {
+
+    .form-text {
+      width: 50%;
+    }
+
+    .form-select {
+      width: 35%;
+    }
+
+    .form-subject {
+      width: 65%;
+    }
+
+    .form-text, .form-select, .form-subject, .form-btn {
+      float: left;
+      padding: 12px;
+
+      @include small {
+      	padding: 8px 15px;
+      	width: 100%;
+      }
+    }
+
+    .form-btn {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+
+    .form-input {
+      appearance: none;
+      background-color: $white;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.17);
+      font-family: Raleway-Regular;
+      font-size: 1.6em;
+      height: 3.125em;
+      line-height: 3.125em;
+      padding: 0 30px;
+      width: 100%;
+
+      @include small {
+      	padding: 0 10px;
+      }
+    }
+
+    .form-submit {
+      background-color: $sicar-green;
+      border: none;
+      border-radius: 5px;
+      color: $white;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Raleway-Regular;
+      font-size: 1.6em;
+      height: 3.125em;
+      width: 200px;
+
+      @include extra-small {
+      	width: 100%;
+      }
+
+      &:hover {
+      	border: solid 2px $lemon-ps;
+      }
+    }
+  }
+}

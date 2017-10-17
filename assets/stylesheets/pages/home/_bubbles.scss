@@ -1,0 +1,66 @@
+.bubble-item {
+  display: inline-block;
+  margin: 3em auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.bubble-image {
+  display: inline-block;
+  min-height: 400px;
+  vertical-align: middle;
+  width: 49%;
+
+  @include small {
+    min-height: 300px;
+    width: 95%;
+  }
+}
+
+.bubble-text {
+  display: inline-block;
+  min-height: 400px;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  width: 50%;
+
+  @include small {
+    width: 100%;
+  }
+
+  .bubble-wrapper {
+    @include center(false,true);
+
+    padding: 0 3em;
+  }
+
+  .bubble-title {
+    font-family: Raleway-Bold;
+    font-size: 8em;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+
+  .bubble-paragraph {
+    font-family: Raleway-SemiBold;
+    font-size: 1.8em;
+    margin: 0.8em 0;
+  }
+
+  .bubble-btn {
+    font-family: Raleway-Bold;
+    font-size: 1.8em;
+    text-transform: uppercase;
+  }
+}
+
+.bubble-right {
+  float: right;
+}
+
+.bubble-img1 { background: url('../../images/home/we-are.png') center/contain no-repeat; }
+.bubble-img2 { background: url('../../images/home/we-plant.png') center/contain no-repeat; }
+.bubble-img3 { background: url('../../images/home/we-pack.png') center/contain no-repeat; }
+.bubble-img4 { background: url('../../images/home/we-ship.png') center/contain no-repeat; }
+.bubble-img5 { background: url('../../images/home/we-care.png') center/contain no-repeat; }

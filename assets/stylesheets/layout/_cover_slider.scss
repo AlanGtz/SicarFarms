@@ -1,0 +1,44 @@
+.cover-slider {
+
+  .cover-slide {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .owl-stage-outer {
+    overflow: visible !important;
+  }
+
+  .owl-prev {
+    @include center(false,true);
+
+    background-color: $polarized;
+    height: 94px;
+    width: 56px;
+
+    .left-arrow {
+      @include center(true,true);
+
+      background: url('../../../images/icons/prev.svg') center/contain no-repeat;
+      height: 36px;
+      width: 21px;
+    }
+  }
+
+  .owl-next {
+    @include center(false,true);
+
+    background-color: $polarized;
+    height: 94px;
+    right: 0;
+    width: 56px;
+
+    .right-arrow {
+      @include center(true,true);
+
+      background: url('../../../images/icons/next.svg') center/contain no-repeat;
+      height: 36px;
+      width: 21px;
+    }
+  }
+}
