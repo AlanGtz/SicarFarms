@@ -16,12 +16,22 @@
     height: 94px;
     width: 56px;
 
+    @include extra-small {
+      height: 64px;
+      width: 34px;
+    }
+
     .left-arrow {
       @include center(true,true);
 
       background: url('../../../images/icons/prev.svg') center/contain no-repeat;
       height: 36px;
       width: 21px;
+
+      @include extra-small {
+        height: 24px;
+        width: 17px;
+      }
     }
   }
 
@@ -33,12 +43,22 @@
     right: 0;
     width: 56px;
 
+    @include extra-small {
+      height: 64px;
+      width: 34px;
+    }
+
     .right-arrow {
       @include center(true,true);
 
       background: url('../../../images/icons/next.svg') center/contain no-repeat;
       height: 36px;
       width: 21px;
+
+      @include extra-small {
+        height: 24px;
+        width: 17px;
+      }
     }
   }
 }

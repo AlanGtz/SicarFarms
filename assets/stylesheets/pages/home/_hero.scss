@@ -13,12 +13,24 @@
     line-height: 0.9em;
     text-align: center;
     text-transform: uppercase;
+
+    @include extra-small {
+      font-size: 12vw;
+    }
   }
 
   .hero-slogan {
     @include center(true,true);
 
     width: 50vw !important;
+
+    @include small {
+      width: 65vw !important;
+    }
+
+    @include extra-small {
+      width: 80vw !important;
+    }
   }
 
   .hero-wrapper {
@@ -28,6 +40,10 @@
     max-width: 900px;
     text-align: center;
     width: 100%;
+
+    @include large {
+      max-width: 992px;
+    }
 
     .go-product {
       color: $white;
@@ -48,34 +64,87 @@
       font-family: Raleway-SemiBold;
       font-size: 2.8em;
       padding: 3em 4em;
+
+      @include small {
+        padding: 2em;
+      }
+
+      @include extra-small {
+        font-size: 2.4em;
+        padding: 2em 1em;
+      }
     }
   }
 
   .hero-slide1 {
-     background: url('../../../images/hero/hero-slide1.png') center/cover no-repeat;
+    background: url('../../../images/hero/hero-slide1.png') center/cover no-repeat;
   }
 
   .hero-slide2 {
     background: $lemon-mx url('../../../images/hero/hero-slide2.png') center/60% no-repeat;
+
+    @include small {
+      background: $lemon-mx url('../../../images/hero/hero-slide2.png') center/90% no-repeat;
+    }
+
+    @include extra-small {
+      background: $lemon-mx url('../../../images/hero/hero-slide2.png') center/150% no-repeat;
+    }
   }
 
   .hero-slide3 {
     background: $lemon-ps url('../../../images/hero/hero-slide3.png') center/60% no-repeat;
+
+    @include small {
+      background: $lemon-ps url('../../../images/hero/hero-slide3.png') center/90% no-repeat;
+    }
+
+    @include extra-small {
+      background: $lemon-ps url('../../../images/hero/hero-slide3.png') center/150% no-repeat;
+    }
   }
 
   .hero-slide4 {
     background: $pineapple url('../../../images/hero/hero-slide4.png') center/contain no-repeat;
+
+    @include small {
+      background: $pineapple url('../../../images/hero/hero-slide4.png') center/cover no-repeat;
+    }
   }
 
   .hero-slide5 {
     background: $tomatoe url('../../../images/hero/hero-slide5.png') center/60% no-repeat;
+
+    @include small {
+      background: $tomatoe url('../../../images/hero/hero-slide5.png') center/90% no-repeat;
+    }
+
+    @include extra-small {
+      background: $tomatoe url('../../../images/hero/hero-slide5.png') center/150% no-repeat;
+    }
   }
 
   .hero-slide6 {
     background: $tamarind url('../../../images/hero/hero-slide6.png') center/60% no-repeat;
+
+    @include small {
+      background: $tamarind url('../../../images/hero/hero-slide6.png') center/90% no-repeat;
+    }
+
+    @include extra-small {
+      background: $tamarind url('../../../images/hero/hero-slide6.png') center/150% no-repeat;
+    }
   }
 
   .hero-slide7 {
     background: $coconut url('../../../images/hero/hero-slide7.png') 55% center/60% no-repeat;
+
+    @include small {
+      background: $coconut url('../../../images/hero/hero-slide7.png') 55% center/90% no-repeat;
+    }
+
+    @include extra-small {
+      background: $coconut url('../../../images/hero/hero-slide7.png') 40% center/150% no-repeat;
+    }
   }
 }

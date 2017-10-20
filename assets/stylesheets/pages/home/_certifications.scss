@@ -3,7 +3,9 @@
   font-family: Raleway-SemiBold;
   margin: 8em 0;
   padding: 0 10vw;
+  position: relative;
   width: 100%;
+  z-index: 3;
 
   @include extra-large {
     padding: 0;

@@ -5,16 +5,29 @@
   height: 90px;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 300;
+
+  @include extra-small {
+    height: 50px;
+  }
 
   .header-logo {
     margin: 30px 0 0 33px;
     width: 235px;
+
+    @include extra-small {
+      margin: 15px 0 0 15px;
+      width: 150px;
+    }
   }
 
   .header-options {
     float: right;
-    margin: 38px 38px 0 0;
+    margin: 38px 104px 0 0;
+
+    @include extra-small {
+      margin: 20px 66px 0 0;
+    }
   }
 
   .lang-menu {
@@ -23,6 +36,10 @@
     font-family: Raleway-SemiBold;
     font-size: 14px;
     text-transform: uppercase;
+
+    @include extra-small {
+      font-size: 13px;
+    }
   }
 
   .lang-label {
@@ -33,14 +50,5 @@
     &.lang-active {
       text-decoration: underline;
     }
-  }
-
-  .menu-burger {
-    background: url('../images/icons/menu.svg') center/contain no-repeat;
-    cursor: pointer;
-    display: inline-block;
-    height: 28px;
-    margin-left: 30px;
-    width: 34px;
   }
 }

@@ -2,9 +2,15 @@
   @include linear-gradient($honey,$lemon-mx);
 
   color: $white;
-  padding: 20em 15px 0 15px;
+  overflow: hidden;
+  padding: 20em 15px 0;
+  position: relative;
   text-align: center;
   width: 100%;
+
+  @include large {
+    padding: 6em 15px 0;
+  }
 
   .slogan {
     background: url('../../../images/home/slogan-bg.png') center/contain no-repeat;

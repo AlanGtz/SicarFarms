@@ -1,0 +1,102 @@
+.fruits {
+  .parallax {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .fruit1 {
+    background: url('../../../images/home/parallax1.png') center/contain no-repeat;
+    height: 28vw;
+    left: 25vw;
+    width: 28vw;
+
+    @include extra-small {
+      height: 43vw;
+      width: 43vw;
+    }
+  }
+
+  .fruit2 {
+    background: url('../../../images/home/parallax2.png') center/contain no-repeat;
+    height: 35vw;
+    right: -4vw;
+    width: 35vw;
+
+    @include extra-small {
+      height: 50vw;
+      width: 50vw;
+    }
+  }
+
+  .fruit3 {
+    background: url('../../../images/home/parallax3.png') center/contain no-repeat;
+    height: 40vw;
+    left: -15vw;
+    width: 40vw;
+
+    @include extra-small {
+      height: 55vw;
+      width: 55vw;
+    }
+  }
+
+  .fruit4 {
+    background: url('../../../images/home/parallax4.png') center/contain no-repeat;
+    height: 70vw;
+    right: -9vw;
+    width: 45vw;
+
+    @include extra-small {
+      height: 85vw;
+      width: 60vw;
+    }
+  }
+
+  .fruit5 {
+    background: url('../../../images/home/parallax5.png') center/contain no-repeat;
+    height: 28vw;
+    left: -8vw;
+    width: 28vw;
+
+    @include extra-small {
+      height: 43vw;
+      width: 43vw;
+    }
+  }
+
+  .fruit6 {
+    background: url('../../../images/home/parallax6.png') center/contain no-repeat;
+    height: 35vw;
+    right: -12vw;
+    width: 35vw;
+
+    @include extra-small {
+      height: 50vw;
+      width: 50vw;
+    }
+  }
+
+  .fruit7 {
+    background: url('../../../images/home/parallax7.png') center/contain no-repeat;
+    height: 36vw;
+    left: -18vw;
+    width: 36vw;
+
+    @include extra-small {
+      height: 51vw;
+      width: 51vw;
+    }
+  }
+
+  .fruit8 {
+    background: url('../../../images/home/parallax8.png') center/contain no-repeat;
+    height: 70vw;
+    right: -22vw;
+    width: 45vw;
+
+    @include extra-small {
+      height: 85vw;
+      width: 60vw;
+    }
+  }
+}

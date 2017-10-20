@@ -8,7 +8,15 @@ $(window).on('resize',function() {
 
 function setHeight() {
   var pHeight = $('.hero-paragraph').outerHeight();
-  var bottom = (pHeight/2)+30;
+  var bottom = 0;
 
-  $('.hero-wrapper').css('bottom', -bottom);
+  if ($(window).width() >= 992) {
+    bottom = (pHeight/2)+30;
+
+    $('.hero-wrapper').css('bottom', -bottom);
+  } else {
+  	bottom = pHeight;
+  	$('.hero-wrapper').css('bottom', -bottom);
+  	$('.hero').css('margin-bottom', bottom)
+  }
 }

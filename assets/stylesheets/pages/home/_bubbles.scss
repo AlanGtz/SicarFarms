@@ -2,7 +2,9 @@
   display: inline-block;
   margin: 3em auto;
   max-width: 1000px;
+  position: relative;
   width: 100%;
+  z-index: 2;
 }
 
 .bubble-image {
@@ -27,6 +29,10 @@
 
   @include small {
     width: 100%;
+  }
+
+  @include extra-small {
+    min-height: 270px;
   }
 
   .bubble-wrapper {

@@ -1,0 +1,113 @@
+.menu-burger {
+  background: url('../images/icons/menu.svg') center/contain no-repeat;
+  cursor: pointer;
+  height: 28px;
+  margin-left: 30px;
+  position: fixed;
+  right: 38px;
+  top: 38px;
+  transition: 0.4s;
+  transform-origin: center;
+  width: 34px;
+  z-index: 600;
+
+  @include extra-small {
+    height: 26px;
+    right: 15px;
+    top: 21px;
+    width: 32px;
+  }
+
+  &.fs {
+    background: url('../images/icons/close-menu.svg') center/contain no-repeat;
+    transform: rotate(-180deg);
+  }
+}
+
+.menu-bg {
+  @include center(false,true);
+
+  background: $sicar-green;
+  border-radius: 100%;
+  height: 0;
+  pointer-events: none;
+  position: fixed;
+  right: -20vh;
+  transition: 0.7s;
+  transition-delay: 0.1s;
+  width: 0;
+  z-index: 400;
+
+  &.fs{
+    height: 160vh;
+    right: -60vh;
+    transition-delay: 0s;
+    width: 120vh;
+
+    @include extra-small {
+      right: -80vh;
+    }
+  }
+}
+
+.menu-content {
+  height: 100vh;
+  position: fixed;
+  right: -100vw;
+  text-align: right;
+  transition: 1s;
+  width: 180px;
+  z-index: 500;
+
+  .menu-wrapper {
+    @include center(false,true);
+
+    width: 100%;
+
+    .menu-link {
+      color: $white;
+      display: block;
+      font-family: Raleway-Bold;
+      font-size: 3em;
+      line-height: 1.5em;
+      transition: 0.2s;
+
+      &:hover {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .menu-social {
+    bottom: 8vh;
+    position: absolute;
+    width: 100%;
+
+    .social-item {
+      display: inline-block;
+      height: 20px;
+      margin-left: 12px;
+      width: 24px;
+    }
+
+    .social-facebook {
+      background: url('../../../images/icons/facebook-white.svg') center/contain no-repeat;
+    }
+
+    .social-youtube {
+      background: url('../../../images/icons/youtube-white.svg') center/contain no-repeat;
+    }
+
+    .social-vimeo {
+      background: url('../../../images/icons/vimeo-white.svg') center/contain no-repeat;
+    }
+
+    .social-twitter {
+      background: url('../../../images/icons/twitter-white.svg') center/contain no-repeat;
+    }
+  }
+
+  &.fs {
+    right: 5vw;
+  }
+}

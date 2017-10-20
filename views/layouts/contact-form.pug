@@ -2,12 +2,12 @@
   h3.contact-title Me interesa
   form.contact-form
     .form-text
-      input.form-input(type="text" name="nombre" id="nombre" placeholder="Nombre")
+      input.form-input(type="text" name="nombre" id="nombre" placeholder="Nombre" required)
     .form-text
-      input.form-input(type="email" name="email" id="email" placeholder="E-mail")
+      input.form-input(type="email" name="email" id="email" placeholder="E-mail" required)
     .form-select
-      select.form-input(name="interest" id="interest" placeholder="Fruta")
-        option(value="Fruta")
+      select.form-input(name="interest" id="interest" placeholder="Fruta" required)
+        option(value="" default hidden) Fruta
         option(value="lemon-mx") Limón Mexicano
         option(value="lemon-ps") Limón Persa
         option(value="tomatoe") Tomate Roma
@@ -15,6 +15,6 @@
         option(value="coconut") Coco Destopado
         option(value="tamarind") Tamarindo
     .form-subject
-      input.form-input(type="text" name="subject" id="subject" placeholder="Asunto")
+      input.form-input(type="text" name="subject" id="subject" placeholder="Asunto" required)
     .form-btn
       input.form-submit(type="submit" name="submit" value="Enviar")

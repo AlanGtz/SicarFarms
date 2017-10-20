@@ -1,7 +1,7 @@
 var express = require('express');
        i18n = require('i18n');
 
-const hostname = '127.0.0.1';
+const hostname = '0.0.0.0';
           port = 8080;
 
 i18n.configure({
