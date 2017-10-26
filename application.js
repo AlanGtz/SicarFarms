@@ -24,7 +24,23 @@ app.get('/', function(req, res) {
 
 app.get('/we_are', function(req, res) {
   res.render('we_are');
-})
+});
+
+app.get('/we_plant', function(req, res) {
+  res.render('we_plant');
+});
+
+app.get('/we_pack', function(req, res) {
+  res.render('we_pack');
+});
+
+app.get('/we_ship', function(req, res) {
+  res.render('we_ship');
+});
+
+app.get('/we_care', function(req, res) {
+  res.render('we_care');
+});
 
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);

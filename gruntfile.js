@@ -82,7 +82,7 @@ module.exports = function(grunt) {
             'assets/javascripts/application.min.js',
             'assets/stylesheets/application.min.css',
             'views/*.pug',
-            'views/**.pug'
+            'views/**/*.pug'
           ]
         },
         options: {

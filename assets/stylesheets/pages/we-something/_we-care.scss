@@ -1,0 +1,24 @@
+.we-care {
+
+  .we-content {
+    @include linear-gradient($pomelo, $water);
+
+    padding: 0 30px;
+
+    @include small {
+      padding: 0 15px;
+    }
+  }
+
+  .cover {
+    background-color: $pomelo;
+  }
+
+  .we-video {
+    background: url('../images/min/we_care/we-care-bg.jpg') no-repeat;
+  }
+
+  .cover-layer {
+    background: url('../images/min/we_care/we-care-title.svg') center/100% no-repeat;
+  }
+}

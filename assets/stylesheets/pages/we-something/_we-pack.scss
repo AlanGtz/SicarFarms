@@ -1,0 +1,24 @@
+.we-pack {
+
+  .we-content {
+    @include linear-gradient($pineapple, $peach);
+
+    padding: 0 30px;
+
+    @include small {
+      padding: 0 15px;
+    }
+  }
+
+  .cover {
+    background-color: $pineapple;
+  }
+
+  .we-video {
+    background: url('../images/min/we_pack/we-pack-bg.jpg') no-repeat;
+  }
+
+  .cover-layer {
+    background: url('../images/min/we_pack/we-pack-title.svg') center/100% no-repeat;
+  }
+}

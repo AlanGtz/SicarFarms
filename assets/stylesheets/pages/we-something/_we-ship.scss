@@ -1,0 +1,24 @@
+.we-ship {
+
+  .we-content {
+    @include linear-gradient($water, $aqua);
+
+    padding: 0 30px;
+
+    @include small {
+      padding: 0 15px;
+    }
+  }
+
+  .cover {
+    background-color: $water;
+  }
+
+  .we-video {
+    background: url('../images/min/we_ship/we-ship-bg.jpg') no-repeat;
+  }
+
+  .cover-layer {
+    background: url('../images/min/we_ship/we-ship-title.svg') center/100% no-repeat;
+  }
+}
