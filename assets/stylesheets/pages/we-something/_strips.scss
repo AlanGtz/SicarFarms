@@ -1,0 +1,71 @@
+.strip {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 48em;
+  margin: 14em 0;
+  text-align: left;
+  width: 100%;
+
+  @include small {
+    background-size: cover;
+    margin: 10em 0;
+  }
+
+  &.strip-right {
+    background-position: left;
+
+    .strip-text {
+      float: right;
+    }
+  }
+
+  .strip-text {
+    color: $white;
+    height: 100%;
+    position: relative;
+    width: 47.5%;
+
+    @include medium {
+      width: 80%;
+    }
+
+    @include small {
+      text-align: center;
+      width: 100%;
+    }
+
+    .strip-wrapper {
+      @include center(false,true);
+
+      padding: 0 10em;
+      width: 100%;
+
+      @include extra-large {
+        padding: 0 5em;
+      }
+    }
+
+    .strip-title {
+      @include section-title;
+
+      line-height: 1em;
+      text-align: left;
+
+      @include small {
+        text-align: center;
+      }
+    }
+
+    .strip-paragraph {
+      font-family: Raleway-SemiBold;
+      font-size: 1.8em;
+      margin-top: 0.6em;
+    }
+  }
+
+  &.strip1 { background-image: url(../images/min/we_plant/strip1.png); }
+  &.strip2 { background-image: url(../images/min/we_plant/strip2.png); }
+  &.strip3 { background-image: url(../images/min/we_plant/strip3.png); }
+}

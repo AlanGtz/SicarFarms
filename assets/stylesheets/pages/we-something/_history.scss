@@ -4,6 +4,10 @@
   text-align: left;
   width: 100%;
 
+  @include extra-small {
+    margin: 10em 0 20em;
+  }
+
   .history-title {
     @include section-title;
   }
