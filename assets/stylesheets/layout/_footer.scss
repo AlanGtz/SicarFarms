@@ -1,11 +1,11 @@
 .footer {
-  background: url('../../../images/footer-bg.png') right bottom/60% no-repeat;
+  background: url('../images/min/footer-bg.png') right bottom/60% no-repeat;
   padding: 30px;
   position: relative;
   width: 100%;
 
   @include small {
-    background: url('../../../images/footer-bg.png') right bottom/50% no-repeat;
+    background: url('../images/min/footer-bg.png') right bottom/50% no-repeat;
   }
 
   .footer-logo {
@@ -93,24 +93,24 @@
     }
 
     .social-facebook {
-      background: url('../../../images/icons/facebook-green.svg') center/contain no-repeat;
+      background: url('../images/min/icons/facebook-green.svg') center/contain no-repeat;
     }
 
     .social-youtube {
-      background: url('../../../images/icons/youtube-green.svg') center/contain no-repeat;
+      background: url('../images/min/icons/youtube-green.svg') center/contain no-repeat;
     }
 
     .social-vimeo {
-      background: url('../../../images/icons/vimeo-green.svg') center/contain no-repeat;
+      background: url('../images/min/icons/vimeo-green.svg') center/contain no-repeat;
     }
 
     .social-twitter {
-      background: url('../../../images/icons/twitter-green.svg') center/contain no-repeat;
+      background: url('../images/min/icons/twitter-green.svg') center/contain no-repeat;
     }
   }
 
   .goto-ceiling {
-    background: url('../../../images/icons/ceiling.svg') center/contain no-repeat;
+    background: url('../images/min/icons/ceiling.svg') center/contain no-repeat;
     border-radius: 50%;
     bottom: 30px;
     height: 60px;

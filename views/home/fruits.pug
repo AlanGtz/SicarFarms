@@ -13,7 +13,7 @@ section.fruits
       .bubble-wrapper
         h3.bubble-title We are
         p.bubble-paragraph Más de #[b 25 años de experiencia]  nos ubican como una empresa líder en el  sector agrícola. El sello de excelencia #[b SiCar Farms] integra a cítricos, frutas y hortalizas.
-        a.bubble-btn Ver más
+        a.bubble-btn(href="/we_are") Ver más
   br
   .bubble-item
     .bubble-image.bubble-img2.bubble-right
@@ -49,13 +49,5 @@ section.fruits
   br
   .slogan
     .slogan-text
-  .certifications
-    h2.cert-title Certificaciones
-    p.cert-desc En #[b SiCar Farms] valoramos los procesos de certificación como mecanismos consistentes para la mejora continua, la innovación, la investigación y el desarrollo.
-    br
-    .cert-item.cert1
-    .cert-item.cert2
-    .cert-item.cert3
-    .cert-item.cert4
-    .cert-item.cert5
+  include ../layouts/certifications.pug
   include ../layouts/address.pug

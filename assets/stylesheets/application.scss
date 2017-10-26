@@ -15,7 +15,13 @@
   'base/base',
   'base/fonts';
 
-// 4. Layout-related sections
+// 4. Components
+@import
+  'components/video-cover',
+  'components/buttons',
+  'components/titles';
+
+// 5. Layout-related sections
 @import
   'layout/header',
   'layout/menu',
@@ -24,17 +30,20 @@
   'layout/contact-form',
   'layout/footer';
 
-// 5. Components
-@import
-  'components/buttons';
-
 // 6. Page-specific styles
 @import
   'pages/home/hero',
   'pages/home/fruits',
   'pages/home/fruit-parallax',
   'pages/home/bubbles',
-  'pages/home/certifications';
+  'pages/home/certifications',
+  'pages/we-something/we-are',
+  'pages/we-something/cover',
+  'pages/we-something/content',
+  'pages/we-something/history',
+  'pages/we-something/cards',
+  'pages/we-something/values',
+  'pages/we-something/facilities';
 
 // 7. Themes
 @import

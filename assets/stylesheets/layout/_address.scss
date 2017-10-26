@@ -7,17 +7,10 @@
   }
 
   .addrs-title {
+    @include section-title;
+
     font-family: Raleway-SemiBold;
-    font-size: 8em;
     margin-bottom: 0.6em;
-
-    @include medium {
-      font-size: 7em;
-    }
-
-    @include small {
-      font-size: 5em;
-    }
   }
 
   .addrs-map {

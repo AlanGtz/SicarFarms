@@ -1,0 +1,19 @@
+.cover {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  .we-video {
+    @include center(true,true);
+
+    background-size: cover; 
+    height: auto;
+    width: 100vw;
+  }
+
+  .cover-layer {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+  }
+}

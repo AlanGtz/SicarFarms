@@ -1,0 +1,176 @@
+.values {
+  display: block;
+  margin: 0 auto 20em;
+  padding: 0 6em;
+  text-align: left;
+  width: 100%;
+
+  .values-title {
+    @include section-title;
+
+    margin-bottom: 0.6em;
+  }
+
+  .values-slider {
+    background-color: $white;
+    box-shadow: 0 8em 20em -5em $polarized;
+    display: block;
+    height: 32em;
+    margin: 0 auto;
+    max-width: 770px;
+
+    @include medium {
+      height: 25em;
+    }
+
+    @include small {
+      height: auto;
+    }
+  }
+
+  .values-slide {
+    background-color: $white;
+    height: 32em;
+    width: 100%;
+
+    @include medium {
+      height: 25em;
+    }
+
+    .value-image {
+      float: left;
+      height: 100%;
+      padding: 6em;
+      width: 32em;
+
+      @include medium {
+        height: 25em;
+        width: 20em;
+      }
+
+      @include small {
+        height: 24em;
+        width: 100%;
+      }
+    }
+
+    .value-icon {
+      height: 100%;
+      width: 100%;
+    }
+
+    .value-text {
+      background-color: $white;
+      float: left;
+      height: 100%;
+      position: relative;
+      width: calc(100% - 32em);
+
+      @include medium {
+        width: calc(100% - 20em);
+      }
+
+      @include small {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .value-wrapper {
+      @include center(false,true);
+
+      color: $smoke;
+      padding: 0 4em;
+      width: 100%;
+
+      @include small {
+        padding: 2em;
+        position: relative;
+        transform: none;
+      }
+    }
+
+    .value-title {
+      font-family: Raleway-Regular;
+      font-size: 3.6em;
+
+      @include extra-large {
+        font-size: 3em;
+      }
+
+      @include large {
+        font-size: 2.4em
+      }
+
+      @include medium {
+        font-size: 2em;
+      }
+    }
+
+    .value-paragraph {
+      font-family: Raleway-Regular;
+      font-size: 2.4em;
+      margin-top: 1em;
+
+      @include medium {
+        font-size: 2em;
+      }
+    }
+  }
+
+  .value1 {
+    background-color: $water;
+
+    .value-icon {
+      background: url('../images/min/we_are/value1.svg') center/contain no-repeat;
+    }
+  }
+
+  .value2 {
+    background-color: $coconut;
+
+    .value-icon {
+      background: url('../images/min/we_are/value2.svg') center/contain no-repeat;
+    }
+  }
+
+  .value3 {
+    background-color: $mint;
+
+    .value-icon {
+      background: url('../images/min/we_are/value3.svg') center/contain no-repeat;
+    }
+  }
+
+  .value4 {
+    background-color: $orange;
+
+    .value-icon {
+      background: url('../images/min/we_are/value4.svg') center/contain no-repeat;
+    }
+  }
+
+  .value5 {
+    background-color: $pomelo;
+
+    .value-icon {
+      background: url('../images/min/we_are/value5.svg') center/contain no-repeat;
+    }
+  }
+
+  .value6 {
+    background-color: $leaf;
+
+    .value-icon {
+      background: url('../images/min/we_are/value6.svg') center/contain no-repeat;
+    }
+  }
+
+  .value7 {
+    background-color: $sunny;
+
+    .value-icon {
+      background: url('../images/min/we_are/value7.svg') center/contain no-repeat;
+    }
+  }
+}

@@ -58,6 +58,10 @@
     font-family: Raleway-Bold;
     font-size: 1.8em;
     text-transform: uppercase;
+
+    &:visited {
+      color: $white;
+    }
   }
 }
 
@@ -65,8 +69,8 @@
   float: right;
 }
 
-.bubble-img1 { background: url('../../images/home/we-are.png') center/contain no-repeat; }
-.bubble-img2 { background: url('../../images/home/we-plant.png') center/contain no-repeat; }
-.bubble-img3 { background: url('../../images/home/we-pack.png') center/contain no-repeat; }
-.bubble-img4 { background: url('../../images/home/we-ship.png') center/contain no-repeat; }
-.bubble-img5 { background: url('../../images/home/we-care.png') center/contain no-repeat; }
+.bubble-img1 { background: url('../images/min/home/we-are.png') center/contain no-repeat; }
+.bubble-img2 { background: url('../images/min/home/we-plant.png') center/contain no-repeat; }
+.bubble-img3 { background: url('../images/min/home/we-pack.png') center/contain no-repeat; }
+.bubble-img4 { background: url('../images/min/home/we-ship.png') center/contain no-repeat; }
+.bubble-img5 { background: url('../images/min/home/we-care.png') center/contain no-repeat; }

@@ -1,0 +1,39 @@
+.we-are {
+
+  .we-content {
+    @include linear-gradient($sicar-green, $lime);
+  }
+
+  .cover {
+    background-color: $sicar-green;
+  }
+
+  .we-video {
+    background: url('../images/min/we_are/we-are-bg.jpg') no-repeat;
+  }
+
+  .cover-layer {
+    background: url('../images/min/we_are/we-are-title.svg') center/100% no-repeat;
+  }
+
+  .cover-btn {
+    @include center(true,false);
+
+    bottom: 26vh;
+    color: $white;
+    font-family: Raleway-Bold;
+    font-size: 2.6em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 6em;
+  }
+
+  .cover-arrow {
+    @include center(true,false);
+
+    background: url('../images/min/icons/arrow-down.svg') center/contain no-repeat;
+    bottom: 20px;
+    height: 25px;
+    width: 48px;
+  }
+}

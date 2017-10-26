@@ -18,9 +18,13 @@ app.use(express.static('node_modules'));
 
 app.set('view engine', 'pug');
 
-app.get('/',function(req, res){
+app.get('/', function(req, res) {
   res.render('index');
 });
+
+app.get('/we_are', function(req, res) {
+  res.render('we_are');
+})
 
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);

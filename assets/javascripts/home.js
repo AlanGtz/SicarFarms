@@ -17,6 +17,6 @@ function setHeight() {
   } else {
   	bottom = pHeight;
   	$('.hero-wrapper').css('bottom', -bottom);
-  	$('.hero').css('margin-bottom', bottom)
+  	$('.hero').css('margin-bottom', bottom);
   }
 }

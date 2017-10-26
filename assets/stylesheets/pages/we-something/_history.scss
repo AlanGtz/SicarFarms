@@ -1,0 +1,51 @@
+.history {
+  display: inline-block;
+  margin: 20em 0;
+  text-align: left;
+  width: 100%;
+
+  .history-title {
+    @include section-title;
+  }
+
+  .history-slider {
+    display: block;
+    margin: 5em auto 0;
+    position: relative;
+    width: 920px;
+
+    @include large {
+      width: 690px;
+    }
+
+    @include medium {
+      width: 460px;
+    }
+
+    @include extra-small {
+      width: 230px;
+    }
+  }
+
+  .history-slide {
+    background-color: $white;
+    color: $smoke;
+    font-family: Raleway-Regular;
+    height: 300px;
+    padding: 25px 20px;
+
+    &.alt {
+      background-color: $greenish;
+    }
+  }
+
+  .history-year {
+    font-size: 36px;
+    font-weight: lighter;
+  }
+
+  .history-paragraph {
+    font-size: 14px;
+    margin-top: 2em;
+  }
+}

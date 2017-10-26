@@ -1,0 +1,74 @@
+.card {
+  box-shadow: 0 8em 20em -5em $polarized;
+  display: block;
+  height: 45em;
+  margin: 0 auto 20em;
+  max-width: 1100px;
+  text-align: left;
+  width: 100%;
+
+  @include extra-small {
+    margin: 0 auto 10em;
+  }
+
+  &.mission {
+    background: url('../images/min/we_are/mission.jpg') center/cover no-repeat;
+
+    @include extra-small {
+      background: url('../images/min/we_are/mission.jpg') left/cover no-repeat;
+    }
+  }
+
+  &.vision {
+    background: url('../images/min/we_are/vision.jpg') center/cover no-repeat;
+
+    @include extra-small {
+      background: url('../images/min/we_are/vision.jpg') right/cover no-repeat;
+    }
+  }
+
+  &.card-right {
+
+    .card-text {
+      float: right;
+    }
+  }
+
+  .card-text {
+    color: $white;
+    height: 100%;
+    position: relative;
+    width: 47.5%;
+
+    @include medium {
+      width: 80%;
+    }
+
+    @include extra-small {
+      text-align: center;
+      width: 100%;
+    }
+
+    .card-wrapper {
+      @include center(false,true);
+
+      padding: 5em;
+      width: 100%;
+    }
+
+    .card-title {
+      @include section-title;
+
+      text-align: left;
+
+      @include extra-small {
+        text-align: center;
+      }
+    }
+
+    .card-paragraph {
+      font-family: Raleway-SemiBold;
+      font-size: 1.8em;
+    }
+  }
+}

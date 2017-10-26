@@ -1,0 +1,17 @@
+.flat-left {
+  @include center(false,true);
+
+  background: url('../images/min/icons/flat-left.svg') center/contain no-repeat;
+  height: 5em;
+  left: -6.5em;
+  width: 2.7em;
+}
+
+.flat-right {
+  @include center(false,true);
+
+  background: url('../images/min/icons/flat-right.svg') center/contain no-repeat;
+  height: 5em;
+  right: -6.5em;
+  width: 2.7em;
+}

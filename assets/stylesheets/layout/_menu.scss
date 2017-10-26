@@ -1,5 +1,5 @@
 .menu-burger {
-  background: url('../images/icons/menu.svg') center/contain no-repeat;
+  background: url('../images/min/icons/menu.svg') center/contain no-repeat;
   cursor: pointer;
   height: 28px;
   margin-left: 30px;
@@ -19,7 +19,7 @@
   }
 
   &.fs {
-    background: url('../images/icons/close-menu.svg') center/contain no-repeat;
+    background: url('../images/min/icons/close-menu.svg') center/contain no-repeat;
     transform: rotate(-180deg);
   }
 }
@@ -32,7 +32,7 @@
   height: 0;
   pointer-events: none;
   position: fixed;
-  right: -20vh;
+  right: -50vh;
   transition: 0.7s;
   transition-delay: 0.1s;
   width: 0;
@@ -44,8 +44,12 @@
     transition-delay: 0s;
     width: 120vh;
 
-    @include extra-small {
-      right: -80vh;
+    @include medium {
+      right: -68vh;
+
+      @include landscape {
+        right: -20vh;
+      }
     }
   }
 }
@@ -56,7 +60,7 @@
   right: -100vw;
   text-align: right;
   transition: 1s;
-  width: 180px;
+  width: 33.3em;
   z-index: 500;
 
   .menu-wrapper {
@@ -72,8 +76,54 @@
       line-height: 1.5em;
       transition: 0.2s;
 
+      @include medium {
+        @include landscape {
+          font-size: 2em;
+          line-height: 1.2em;
+        }
+      }
+
       &:hover {
         padding-right: 10px;
+      }
+    }
+  }
+
+  .menu-hover {
+    &:hover {
+      & + .submenu {
+        height: 2.4em;
+        margin-right: 0;
+        transition: height 0.3s, margin 0.4s;
+      }
+    }
+  }
+
+  .submenu {
+    color: $white;
+    font-family: Raleway-Regular;
+    font-size: 2em;
+    height: 0;
+    margin-right: -100vw;
+    transition: height 0.6s, margin 0.4s;
+
+    @include small {
+      @include landscape {
+        font-size: 1.8em;
+      }
+    }
+
+    &:hover {
+      height: 2.4em;
+      margin-right: 0;
+    }
+
+    .menu-sublink {
+      color: $white;
+      display: inline-block;
+
+      &:hover {
+        font-weight: bold;
       }
     }
   }
@@ -91,19 +141,19 @@
     }
 
     .social-facebook {
-      background: url('../../../images/icons/facebook-white.svg') center/contain no-repeat;
+      background: url('../images/min/icons/facebook-white.svg') center/contain no-repeat;
     }
 
     .social-youtube {
-      background: url('../../../images/icons/youtube-white.svg') center/contain no-repeat;
+      background: url('../images/min/icons/youtube-white.svg') center/contain no-repeat;
     }
 
     .social-vimeo {
-      background: url('../../../images/icons/vimeo-white.svg') center/contain no-repeat;
+      background: url('../images/min/icons/vimeo-white.svg') center/contain no-repeat;
     }
 
     .social-twitter {
-      background: url('../../../images/icons/twitter-white.svg') center/contain no-repeat;
+      background: url('../images/min/icons/twitter-white.svg') center/contain no-repeat;
     }
   }
 

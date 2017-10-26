@@ -1,0 +1,66 @@
+.facilities {
+  display: block;
+  margin: 0 auto 20em;
+  width: 100%;
+
+  .facilities-title {
+    @include section-title;
+  }
+
+  .facilities-desc {
+    color: $white;
+    display: inline-block;
+    font-family: Raleway-SemiBold;
+    font-size: 1.8em;
+    margin: 1em 0 2em;
+    max-width: 750px;
+  }
+
+  .facilities-gallery {
+    display: inline-block;
+    max-width: 1000px;
+  }
+
+  .facilities-item {
+    border-radius: 4px;
+    display: inline-block;
+    height: 214px;
+    margin: 14px;
+    overflow: hidden;
+    width: 214px;
+
+    @include small {
+      height: 130px;
+      margin: 7px;
+      width: 130px;
+    }
+
+    &:hover {
+      .facilities-text {
+        display: block;
+      }
+    }
+  }
+
+  .facilities-text {
+    background-color: $hulkeye;
+    color: $white;
+    display: none;
+    font-family: Raleway-Bold;
+    font-size: 2.4em;
+    line-height: 214px;
+
+    @include small {
+      line-height: 130px;
+    }
+  }
+
+  .facilities1 { background: url('../images/min/we_are/install1.jpg') center/cover no-repeat }
+  .facilities2 { background: url('../images/min/we_are/install2.jpg') center/cover no-repeat }
+  .facilities3 { background: url('../images/min/we_are/install3.jpg') center/cover no-repeat }
+  .facilities4 { background: url('../images/min/we_are/install4.jpg') center/cover no-repeat }
+  .facilities5 { background: url('../images/min/we_are/install5.jpg') center/cover no-repeat }
+  .facilities6 { background: url('../images/min/we_are/install6.jpg') center/cover no-repeat }
+  .facilities7 { background: url('../images/min/we_are/install7.jpg') center/cover no-repeat }
+  .facilities8 { background: url('../images/min/we_are/install8.jpg') center/cover no-repeat }
+}

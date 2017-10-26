@@ -1,0 +1,14 @@
+@mixin section-title {
+  color: $white;
+  font-family: Raleway-Bold;
+  font-size: 8em;
+  text-align: center;
+
+  @include medium {
+    font-size: 7em;
+  }
+
+  @include small {
+    font-size: 4.5em;
+  }
+}

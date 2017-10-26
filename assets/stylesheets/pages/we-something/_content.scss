@@ -1,0 +1,8 @@
+.we-content {
+  padding: 0 30px;
+  text-align: center;
+
+  @include small {
+    padding: 0 15px;
+  }
+}

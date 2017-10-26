@@ -24,7 +24,7 @@
     .left-arrow {
       @include center(true,true);
 
-      background: url('../../../images/icons/prev.svg') center/contain no-repeat;
+      background: url('../images/min/icons/prev.svg') center/contain no-repeat;
       height: 36px;
       width: 21px;
 
@@ -51,7 +51,7 @@
     .right-arrow {
       @include center(true,true);
 
-      background: url('../../../images/icons/next.svg') center/contain no-repeat;
+      background: url('../images/min/icons/next.svg') center/contain no-repeat;
       height: 36px;
       width: 21px;
 

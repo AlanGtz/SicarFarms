@@ -77,74 +77,74 @@
   }
 
   .hero-slide1 {
-    background: url('../../../images/hero/hero-slide1.png') center/cover no-repeat;
+    background: url('../images/min/hero/hero-slide1.png') center/cover no-repeat;
   }
 
   .hero-slide2 {
-    background: $lemon-mx url('../../../images/hero/hero-slide2.png') center/60% no-repeat;
+    background: $lemon-mx url('../images/min/hero/hero-slide2.png') center/60% no-repeat;
 
     @include small {
-      background: $lemon-mx url('../../../images/hero/hero-slide2.png') center/90% no-repeat;
+      background: $lemon-mx url('../images/min/hero/hero-slide2.png') center/90% no-repeat;
     }
 
     @include extra-small {
-      background: $lemon-mx url('../../../images/hero/hero-slide2.png') center/150% no-repeat;
+      background: $lemon-mx url('../images/min/hero/hero-slide2.png') center/150% no-repeat;
     }
   }
 
   .hero-slide3 {
-    background: $lemon-ps url('../../../images/hero/hero-slide3.png') center/60% no-repeat;
+    background: $lemon-ps url('../images/min/hero/hero-slide3.png') center/60% no-repeat;
 
     @include small {
-      background: $lemon-ps url('../../../images/hero/hero-slide3.png') center/90% no-repeat;
+      background: $lemon-ps url('../images/min/hero/hero-slide3.png') center/90% no-repeat;
     }
 
     @include extra-small {
-      background: $lemon-ps url('../../../images/hero/hero-slide3.png') center/150% no-repeat;
+      background: $lemon-ps url('../images/min/hero/hero-slide3.png') center/150% no-repeat;
     }
   }
 
   .hero-slide4 {
-    background: $pineapple url('../../../images/hero/hero-slide4.png') center/contain no-repeat;
+    background: $pineapple url('../images/min/hero/hero-slide4.png') center/contain no-repeat;
 
     @include small {
-      background: $pineapple url('../../../images/hero/hero-slide4.png') center/cover no-repeat;
+      background: $pineapple url('../images/min/hero/hero-slide4.png') center/cover no-repeat;
     }
   }
 
   .hero-slide5 {
-    background: $tomatoe url('../../../images/hero/hero-slide5.png') center/60% no-repeat;
+    background: $tomatoe url('../images/min/hero/hero-slide5.png') center/60% no-repeat;
 
     @include small {
-      background: $tomatoe url('../../../images/hero/hero-slide5.png') center/90% no-repeat;
+      background: $tomatoe url('../images/min/hero/hero-slide5.png') center/90% no-repeat;
     }
 
     @include extra-small {
-      background: $tomatoe url('../../../images/hero/hero-slide5.png') center/150% no-repeat;
+      background: $tomatoe url('../images/min/hero/hero-slide5.png') center/150% no-repeat;
     }
   }
 
   .hero-slide6 {
-    background: $tamarind url('../../../images/hero/hero-slide6.png') center/60% no-repeat;
+    background: $tamarind url('../images/min/hero/hero-slide6.png') center/60% no-repeat;
 
     @include small {
-      background: $tamarind url('../../../images/hero/hero-slide6.png') center/90% no-repeat;
+      background: $tamarind url('../images/min/hero/hero-slide6.png') center/90% no-repeat;
     }
 
     @include extra-small {
-      background: $tamarind url('../../../images/hero/hero-slide6.png') center/150% no-repeat;
+      background: $tamarind url('../images/min/hero/hero-slide6.png') center/150% no-repeat;
     }
   }
 
   .hero-slide7 {
-    background: $coconut url('../../../images/hero/hero-slide7.png') 55% center/60% no-repeat;
+    background: $coconut url('../images/min/hero/hero-slide7.png') 55% center/60% no-repeat;
 
     @include small {
-      background: $coconut url('../../../images/hero/hero-slide7.png') 55% center/90% no-repeat;
+      background: $coconut url('../images/min/hero/hero-slide7.png') 55% center/90% no-repeat;
     }
 
     @include extra-small {
-      background: $coconut url('../../../images/hero/hero-slide7.png') 40% center/150% no-repeat;
+      background: $coconut url('../images/min/hero/hero-slide7.png') 40% center/150% no-repeat;
     }
   }
 }

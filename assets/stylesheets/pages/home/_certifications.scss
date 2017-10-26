@@ -12,15 +12,7 @@
   }
 
   .cert-title {
-    font-size: 8em;
-
-    @include medium {
-      font-size: 7em;
-    }
-
-    @include small {
-      font-size: 4.5em;
-    }
+    @include section-title;
   }
 
   .cert-desc {
@@ -50,9 +42,9 @@
     }
   }
 
-  .cert1 { background: url('../../../images/home/certification-1.png') center/contain no-repeat; }
-  .cert2 { background: url('../../../images/home/certification-2.svg') center/contain no-repeat; }
-  .cert3 { background: url('../../../images/home/certification-3.svg') center/contain no-repeat; }
-  .cert4 { background: url('../../../images/home/certification-4.svg') center/contain no-repeat; }
-  .cert5 { background: url('../../../images/home/certification-5.png') center/contain no-repeat; }
+  .cert1 { background: url('../images/min/home/certification-1.png') center/contain no-repeat; }
+  .cert2 { background: url('../images/min/home/certification-2.svg') center/contain no-repeat; }
+  .cert3 { background: url('../images/min/home/certification-3.svg') center/contain no-repeat; }
+  .cert4 { background: url('../images/min/home/certification-4.svg') center/contain no-repeat; }
+  .cert5 { background: url('../images/min/home/certification-5.png') center/contain no-repeat; }
 }
