@@ -9,7 +9,7 @@
     padding: 0 5em;
     text-align: left;
     vertical-align: middle;
-    width: 35%;
+    width: 40%;
 
     @include extra-large {
       padding: 0 130px;
@@ -30,7 +30,7 @@
 
     .resp-title {
       font-family: Raleway-Bold;
-      font-size: 6.4em;
+      font-size: 6em;
       line-height: 1.1em;
 
       @include small {
