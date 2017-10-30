@@ -1,0 +1,57 @@
+.map {
+  display: inline-block;
+  margin-bottom: 10em;
+  width: 100%;
+
+  .map-title {
+    @include section-title;
+  }
+
+  .map-text {
+    color: $white;
+    display: inline-block;
+    font-family: Raleway-SemiBold;
+    font-size: 1.8em;
+    margin-bottom: 2em;
+    max-width: 820px;
+    padding: 0 30px;
+
+    @include extra-small {
+      padding: 0 15px;
+    }
+  }
+
+  .map-fullimage {
+    margin-top: 5em;
+    width: 100%;
+
+    @include small {
+      margin: 0 -10%;
+      width: 130%;
+    }
+  }
+
+  .map-image {
+    width: 75%;
+
+    @include extra-large {
+      width: 80%;
+    }
+
+    @include large {
+      width: 85%;
+    }
+
+    @include medium {
+      width: 90%;
+    }
+
+    @include small {
+      width: 95%;
+    }
+
+    @include extra-small {
+      width: 99%;
+    }
+  }
+}

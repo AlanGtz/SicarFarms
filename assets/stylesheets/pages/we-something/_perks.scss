@@ -1,0 +1,78 @@
+.perks {
+  color: $white;
+  display: inline-block;
+  margin: 5em 0;
+  padding: 0 15px;
+  width: 100%;
+
+  .perks-title {
+    @include section-title;
+  }
+
+  .perks-text {
+    display: inline-block;
+    font-family: Raleway-SemiBold;
+    font-size: 1.8em;
+    max-width: 600px;
+    padding: 0 15px;
+  }
+
+  .perks-container {
+    display: inline-block;
+    margin-top: 5em;
+    max-width: 1200px;
+
+    @include small {
+      margin-top: 3em;
+    }
+
+    @include extra-small {
+      margin-top: 1em;
+    }
+  }
+
+  .perks-item {
+    display: inline-block;
+    margin: 1.3em 5.5em;
+    vertical-align: top;
+    width: 180px;
+
+    @include extra-large {
+      margin: 1.3em 3em;
+    }
+
+    @include medium {
+      margin: 1.5em 2em;
+      width: 135px;
+    }
+
+    @include small {
+      width: 105px;
+    }
+
+    .perks-image {
+      height: 120px;
+    }
+
+    .perks-name {
+      font-family: Raleway-Bold;
+      font-size: 2.4em;
+      margin-top: 0.9em;
+
+
+      @include medium {
+        font-size: 2em;
+      }
+
+      @include small {
+        font-size: 1.8em;
+      }
+    }
+  }
+
+  @for $i from 1 through 7 {
+    .perks#{$i} {
+      background: url('../images/min/we_care/perk#{$i}.svg') center/contain no-repeat;
+    }
+  }
+}

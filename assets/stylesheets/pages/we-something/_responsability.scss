@@ -1,0 +1,73 @@
+.responsability {
+  display: inline-block;
+  margin: 15vw 0 10vw;
+  width: 100%;
+
+  .resp-wrapper {
+    color: $white;
+    display: inline-block;
+    padding: 0 5em;
+    text-align: left;
+    vertical-align: middle;
+    width: 35%;
+
+    @include extra-large {
+      padding: 0 130px;
+      width: 100%;
+    }
+
+    @include medium {
+      padding: 0 60px;
+    }
+
+    @include small {
+      padding: 0 30px;
+    }
+
+    @include extra-small {
+      padding: 0 15px;
+    }
+
+    .resp-title {
+      font-family: Raleway-Bold;
+      font-size: 6.4em;
+      line-height: 1.1em;
+
+      @include small {
+        font-size: 5em;
+      }
+
+      @include extra-small {
+        font-size: 4.5em;
+      }
+    }
+
+    .resp-text {
+      font-family: Raleway-SemiBold;
+      font-size: 1.8em;
+      margin-top: 1em;
+    }
+  }
+
+  .resp-image {
+    background: url('../images/min/we_care/responsability.svg') center/contain no-repeat;
+    display: inline-block;
+    height: 400px;
+    vertical-align: middle;
+    width: 35%;
+
+    @include extra-large {
+      margin-top: 5em;
+      padding: 0 130px;
+      width: 100%;
+    }
+
+    @include medium {
+      height: 300px;
+    }
+
+    @include small {
+      height: 200px;
+    }
+  }
+}

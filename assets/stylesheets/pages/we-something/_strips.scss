@@ -64,8 +64,28 @@
       margin-top: 0.6em;
     }
   }
+}
 
-  &.strip1 { background-image: url(../images/min/we_plant/strip1.png); }
-  &.strip2 { background-image: url(../images/min/we_plant/strip2.png); }
-  &.strip3 { background-image: url(../images/min/we_plant/strip3.png); }
+.we-plant {
+  .strip1 { background-image: url(../images/min/we_plant/strip1.png); }
+  .strip2 { background-image: url(../images/min/we_plant/strip2.png); }
+  .strip3 { background-image: url(../images/min/we_plant/strip3.png); }
+}
+
+.we-pack {
+  .strip1 { background-image: url(../images/min/we_pack/strip1.png); }
+  .strip2 { background-image: url(../images/min/we_pack/strip2.png); }
+  .strip3 { background-image: url(../images/min/we_pack/strip3.png); }
+}
+
+.we-ship {
+  .strip1 { background-image: url(../images/min/we_ship/strip1.png); }
+  .strip2 { background-image: url(../images/min/we_ship/strip2.png); }
+  .strip3 { background-image: url(../images/min/we_ship/strip3.png); }
+}
+
+.we-care {
+  .strip1 { background-image: url(../images/min/we_care/strip1.png); }
+  .strip2 { background-image: url(../images/min/we_care/strip2.png); }
+  .strip3 { background-image: url(../images/min/we_care/strip3.png); }
 }

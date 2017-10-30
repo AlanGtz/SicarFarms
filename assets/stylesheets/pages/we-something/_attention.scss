@@ -1,0 +1,41 @@
+.attention {
+  background: url('../images/min/we_care/attention.jpg') center top/cover no-repeat;
+  height: 63vw;
+  max-height: 100vh;
+  min-height: 500px;
+  position: relative;
+  width: 100%;
+
+  .attention-title {
+    @include section-title;
+  }
+
+  .attention-text {
+    @include center(true,true);
+
+    color: $white;
+    font-family: Raleway-SemiBold;
+    font-size: 2.4em;
+    left: 70%;
+    max-width: 750px;
+    padding: 0 30px;
+    text-align: left;
+    width: 100%;
+
+    @include extra-large {
+      font-size: 1.8em;
+      left: 70%;
+      max-width: 530px;
+    }
+
+    @include large {
+      max-width: 400px;
+    }
+
+    @include small {
+      left: 50%;
+      text-align: center;
+      top: 60%;
+    }
+  }
+}
