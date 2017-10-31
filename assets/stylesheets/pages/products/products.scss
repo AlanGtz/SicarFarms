@@ -1,0 +1,151 @@
+.products {
+  text-align: center;
+
+  .prods-cover {
+    background-color: $sicar-green;
+    height: 100vh;
+    position: relative;
+
+    .prods-title {
+      @include center(true,true);
+
+      color: $white;
+      font-family: Raleway-Bold;
+      font-size: 10vw;
+      line-height: 0.9em;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include extra-large {
+        font-size: 13vw;
+      }
+    }
+  }
+
+  .prods-content {
+    @include linear-gradient($sicar-green, $mustard);
+
+    padding: 0 30px;
+    position: relative;
+
+    @include extra-small {
+      padding: 0 15px;
+    }
+
+    .prods-text {
+      color: $white;
+      display: inline-block;
+      font-family: Raleway-SemiBold;
+      font-size: 3.2em;
+      margin: 10em 0;
+      max-width: 780px;
+      width: 100%;
+    }
+  }
+
+  .prods-item {
+    display: inline-block;
+    margin-bottom: 3em;
+    padding: 60px;
+    width: 100%;
+
+    @include extra-large {
+      margin-bottom: 18em;
+    }
+
+    @include small {
+      margin-bottom: 30em;
+      padding: 0;
+    }
+
+    @include extra-small {
+      margin-bottom: 25em;
+    }
+
+    .prod-image, .prod-text {
+      float: left;
+    }
+
+    .prod-image {
+      height: 40vw;
+      width: 50%;
+
+      @include extra-large {
+        background-position: bottom;
+        width: 100%;
+      }
+
+      @include medium {
+        height: 60vw;
+      }
+    }
+
+    .prod-text {
+      color: $white;
+      height: 40vw;
+      position: relative;
+      text-align: left;
+      width: 50%;
+
+      @include extra-large {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .prod-wrapper {
+      @include center(false,true);
+
+      font-family: Raleway-SemiBold;
+      font-size: 1.8em;
+      padding: 50px;
+      width: 100%;
+
+      @include extra-small {
+        margin-top: 1em;
+        padding: 0;
+        text-align: center;
+      }
+    }
+
+    .prod-name {
+      font-family: Raleway-Bold;
+      font-size: 4.6em;
+      line-height: 0.9em;
+
+      @include small {
+        font-size: 4em;
+      }
+
+      @include extra-small {
+        font-size: 3.5em;
+      }
+    }
+
+    .prod-paragraph {
+      margin: 1em 0 0.9em;
+    }
+
+    .prod-link {
+      font-family: Raleway-Bold;
+      color: $white;
+      text-transform: uppercase;
+
+      @include extra-small {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .prod-right {
+    .prod-image, .prod-text {
+      float: right;
+    }
+  }
+
+  @for $i from 1 through 6 {
+    .prod#{$i} {
+      background: url('../images/min/products/prod#{$i}.png') center/contain no-repeat;
+    }
+  }
+}

@@ -42,6 +42,42 @@ app.get('/we_care', function(req, res) {
   res.render('we_care');
 });
 
+app.get('/products', function(req, res) {
+  res.render('products');
+});
+
+app.get('/mexican_lemon', function(req, res) {
+  res.render('mexican_lemon');
+});
+
+app.get('/persian_lemon', function(req, res) {
+  res.render('persian_lemon');
+});
+
+app.get('/tomatoe', function(req, res) {
+  res.render('tomatoe');
+});
+
+app.get('/pineapple', function(req, res) {
+  res.render('pineapple');
+});
+
+app.get('/coconut', function(req, res) {
+  res.render('coconut');
+});
+
+app.get('/tamarind', function(req, res) {
+  res.render('tamarind');
+});
+
+app.get('/contact', function(req, res) {
+  res.render('contact');
+});
+
+app.get('/news', function(req, res) {
+  res.render('news');
+});
+
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
