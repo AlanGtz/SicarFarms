@@ -3,7 +3,8 @@ $(document).ready(function() {
     loop:true,
     items: 1,
     nav: true,
-    navText: ['<div class="left-arrow"></div>','<div class="right-arrow"></div>']
+    navText: ['<div class="left-arrow"></div>','<div class="right-arrow"></div>'],
+    onChanged: callback
   });
 
   $('.history-slider').owlCarousel({
@@ -37,6 +38,54 @@ $(document).ready(function() {
     navText: ['<div class="flat-left"></div>','<div class="flat-right"></div>']
   });
 });
+
+function callback(event) {
+  var item = event.item.index;
+  var prev = $('.owl-prev');
+  var next = $('.owl-next');
+
+  switch (item) {
+    case 0:
+      $(prev).css('background-color', '#844A16');
+      $(next).css('background-color', '#88D43B');
+      break;
+    case 3:
+      $(prev).css('background-color', '#D48D4D');
+      $(next).css('background-color', '#28AC01');
+      break;
+    case 4:
+      $(prev).css('background-color', '#844A16');
+      $(next).css('background-color', '#88D43B');
+      break;
+    case 5:
+      $(prev).css('background-color', '#28AC01');
+      $(next).css('background-color', '#BBD43B');
+      break;
+    case 6:
+      $(prev).css('background-color', '#88D43B');
+      $(next).css('background-color', '#F1C319');
+      break;
+    case 7:
+      $(prev).css('background-color', '#BBD43B');
+      $(next).css('background-color', '#F15733');
+      break;
+    case 8:
+      $(prev).css('background-color', '#F1C319');
+      $(next).css('background-color', '#D48D4D');
+      break;
+    case 9:
+      $(prev).css('background-color', '#F15733');
+      $(next).css('background-color', '#844A16');
+      break;
+    case 10:
+      $(prev).css('background-color', '#D48D4D');
+      $(next).css('background-color', '#28AC01');
+      break;
+    default:
+      $(prev).css('background-color', '#844A16');
+      $(next).css('background-color', '#88D43B');
+  }
+}
 
 $(document).ready(function() {
   goToCeiling();

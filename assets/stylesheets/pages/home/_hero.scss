@@ -125,26 +125,26 @@
   }
 
   .hero-slide6 {
-    background: $tamarind url('../images/min/hero/hero-slide6.png') center/60% no-repeat;
+    background: $coconut url('../images/min/hero/hero-slide6.png') center/60% no-repeat;
 
     @include small {
-      background: $tamarind url('../images/min/hero/hero-slide6.png') center/90% no-repeat;
+      background: $coconut url('../images/min/hero/hero-slide6.png') center/90% no-repeat;
     }
 
     @include extra-small {
-      background: $tamarind url('../images/min/hero/hero-slide6.png') center/150% no-repeat;
+      background: $coconut url('../images/min/hero/hero-slide6.png') center/150% no-repeat;
     }
   }
 
   .hero-slide7 {
-    background: $coconut url('../images/min/hero/hero-slide7.png') 55% center/60% no-repeat;
+    background: $tamarind url('../images/min/hero/hero-slide7.png') 55% center/60% no-repeat;
 
     @include small {
-      background: $coconut url('../images/min/hero/hero-slide7.png') 55% center/90% no-repeat;
+      background: $tamarind url('../images/min/hero/hero-slide7.png') 55% center/90% no-repeat;
     }
 
     @include extra-small {
-      background: $coconut url('../images/min/hero/hero-slide7.png') 40% center/150% no-repeat;
+      background: $tamarind url('../images/min/hero/hero-slide7.png') 40% center/150% no-repeat;
     }
   }
 }

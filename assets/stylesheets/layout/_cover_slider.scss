@@ -12,7 +12,7 @@
   .owl-prev {
     @include center(false,true);
 
-    background-color: $polarized;
+    background-color: $tamarind;
     height: 94px;
     width: 56px;
 
@@ -38,7 +38,7 @@
   .owl-next {
     @include center(false,true);
 
-    background-color: $polarized;
+    background-color: $lemon-mx;
     height: 94px;
     right: 0;
     width: 56px;
