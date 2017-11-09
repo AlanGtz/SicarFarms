@@ -27,11 +27,9 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'assets/javascripts/carousel.js',
-          'assets/javascripts/ceiling.js',
-          'assets/javascripts/home.js',
-          'assets/javascripts/menu.js',
-          'assets/javascripts/parallax.js'
+          'assets/javascripts/*.js',
+          '!assets/javascripts/application.js',
+          '!assets/javascripts/application.min.js'
         ],
         dest: 'assets/javascripts/application.js'
       }

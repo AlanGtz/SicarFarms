@@ -18,3 +18,17 @@
   height: 25px;
   width: 48px;
 }
+
+.video-popup {
+  @include center(true,true);
+
+  height: 56.25vw;
+  max-height: 100vh;
+  max-width: 177.78vh;
+  width: 100vw;
+
+  .videoplay {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

@@ -2,5 +2,8 @@
   video.we-video#we-video(playsinline autoplay muted loop poster="images/min/we_ship/we-ship-bg.jpg")
     source(src="videos/we-ship-bg.mp4" type="video/mp4")
   .cover-layer
-    a.cover-btn Ver video
+    a.cover-btn(href="#videoPopup") Ver video
+    .video-popup.mfp-hide#videoPopup
+      video.videoplay(preload="auto" controls)
+        source(src="videos/we-ship.mp4" type="video/mp4")
     a.cover-arrow(href="#secondSection")
