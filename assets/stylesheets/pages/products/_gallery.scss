@@ -1,3 +1,42 @@
 .gallery {
-  
+  display: block;
+  margin: 0 auto 10em;
+  width: 100%;
+
+  .gallery-title {
+    @include section-title;
+  }
+
+  .gallery-desc {
+    display: inline-block;
+    font-family: Raleway-SemiBold;
+    font-size: 1.8em;
+    margin: 1em 0 2em;
+    max-width: 750px;
+
+    @include medium {
+      padding: 0 15px;
+    }
+  }
+
+  .gallery-gallery {
+    display: inline-block;
+    max-width: 1000px;
+  }
+
+  .gallery-item {
+    background-color: $white;
+    border-radius: 6px;
+    display: inline-block;
+    height: 214px;
+    margin: 14px;
+    overflow: hidden;
+    width: 214px;
+
+    @include small {
+      height: 130px;
+      margin: 7px;
+      width: 130px;
+    }
+  }
 }

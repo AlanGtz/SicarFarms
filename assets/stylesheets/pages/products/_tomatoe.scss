@@ -1,3 +1,79 @@
 .tomatoe {
-  
+  background-color: $tomatoe;
+  color: $white;
+  text-align: center;
+
+  .cover {
+    background-image: url('../images/min/products/tomatoe.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    @include small {
+      background-size: 90%;
+    }
+
+    @include extra-small {
+      background-size: 150%;
+    }
+  }
+
+  .presentations {
+    .pres1 { background: url('../images/min/products/carton-box7.svg') center/contain no-repeat; }
+    .pres2 { background: url('../images/min/products/plastic-box3.svg') center/contain no-repeat; }
+  }
+
+  .owl-dot {
+    margin: 5px 8px;
+
+    &.active {
+      margin: 0 3px;
+    }
+  }
+
+  .rip1 { background: url('../images/min/products/tomatoe-state1.png') center/contain no-repeat; }
+  .rip2 { background: url('../images/min/products/tomatoe-state2.png') center/contain no-repeat; }
+  .rip3 { background: url('../images/min/products/tomatoe-state3.png') center/contain no-repeat; }
+  .rip4 { background: url('../images/min/products/tomatoe-state4.png') center/contain no-repeat; }
+  .rip5 { background: url('../images/min/products/tomatoe-state5.png') center/contain no-repeat; }
+  .rip6 { background: url('../images/min/products/tomatoe-state6.png') center/contain no-repeat; }
+
+  .dot-1 { background-color: $tomat-tone1; }
+  .dot-2 { background-color: $tomat-tone2; }
+  .dot-3 { background-color: $tomat-tone3; }
+  .dot-4 { background-color: $tomat-tone4; }
+  .dot-5 { background-color: $tomat-tone5; }
+  .dot-6 { background-color: $tomat-tone6; }
+
+  .sizes {
+    .table {
+      @include medium {
+        border-spacing: 6px;
+      }
+
+      @include extra-small {
+        border-spacing: 2px;
+      }
+    }
+
+    .table-head, .table-cell {
+      @include medium {
+        padding: 7px 6px;
+      }
+
+      @include extra-small {
+        padding: 6px 1px;
+      }
+    }
+  }
+
+  .prod-map {
+    background-image: url('../images/min/products/map-tomatoe.svg');
+  }
+
+  @for $i from 1 through 4 {
+    .gallery#{$i} {
+      background: url('../images/min/products/gal-tomatoe#{$i}.png') center/contain no-repeat;
+    }
+  }
 }

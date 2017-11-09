@@ -1,0 +1,26 @@
+.contact {
+
+  .contact-section {
+    @include linear-gradient($honey, $sicar-green);
+
+    padding: 10em 15px 0;
+
+    .contact-title {
+      @include section-title;
+
+      margin-bottom: 40px;
+
+      @include small {
+        font-size: 6em;
+      }
+    }
+  }
+
+  .address {
+    margin: 0;
+  }
+
+  .addrs-title {
+    font-size: 3.2em;
+  }
+}

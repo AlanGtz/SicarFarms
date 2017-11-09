@@ -1,3 +1,47 @@
 .pineapple {
-  
+  background-color: $pineapple;
+  color: $white;
+  text-align: center;
+
+  .cover {
+    background-image: url('../images/min/products/pineapple.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+
+    @include small {
+      background-size: 90%;
+    }
+
+    @include extra-small {
+      background-size: 150%;
+    }
+  }
+
+  .presentations {
+    .pres1 { background: url('../images/min/products/plastic-box3.svg') center/contain no-repeat; }
+    .pres2 { background: url('../images/min/products/carton-box6.svg') center/contain no-repeat; }
+  }
+
+  .rip1 { background: url('../images/min/products/pineapple-state1.png') center bottom/contain no-repeat; }
+  .rip2 { background: url('../images/min/products/pineapple-state2.png') center bottom/contain no-repeat; }
+  .rip3 { background: url('../images/min/products/pineapple-state3.png') center bottom/contain no-repeat; }
+  .rip4 { background: url('../images/min/products/pineapple-state4.png') center bottom/contain no-repeat; }
+  .rip5 { background: url('../images/min/products/pineapple-state5.png') center bottom/contain no-repeat; }
+
+  .dot-1 { background-color: $pnapl-tone1; }
+  .dot-2 { background-color: $pnapl-tone2; }
+  .dot-3 { background-color: $pnapl-tone3; }
+  .dot-4 { background-color: $pnapl-tone4; }
+  .dot-5 { background-color: $pnapl-tone5; }
+
+  .prod-map {
+    background-image: url('../images/min/products/map-pineapple.svg');
+  }
+
+  @for $i from 1 through 4 {
+    .gallery#{$i} {
+      background: url('../images/min/products/gal-pineapple#{$i}.png') center/contain no-repeat;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 .footer {
   background: url('../images/min/footer-bg.png') right bottom/60% no-repeat;
+  background-color: $white;
   padding: 30px;
   position: relative;
   text-align: left;
@@ -7,6 +8,7 @@
 
   @include small {
     background: url('../images/min/footer-bg.png') right bottom/50% no-repeat;
+    background-color: $white;
   }
 
   .footer-logo {
@@ -60,6 +62,7 @@
   }
 
   .footer-info {
+    color: $black;
     font-size: 1.8em;
     margin: 40px 0 0 50px;
 

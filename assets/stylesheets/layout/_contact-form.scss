@@ -35,6 +35,10 @@
         background-position: calc(100% - 30px) center;
         background-repeat: no-repeat;
         background-size: 22px 11px;
+
+        @include small {
+          background-position: calc(100% - 10px) center;
+        }
       }
     }
 

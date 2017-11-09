@@ -48,7 +48,7 @@
       border-radius: 50%;
       height: 500px;
       margin: 480px auto 0;
-      padding-top: 50px;
+      padding-top: 40px;
       position: relative;
       text-align: center;
       width: 500px;
@@ -76,6 +76,10 @@
       font-family: Raleway-Regular;
       font-size: 1.8em;
       margin: 0;
+
+      @include small {
+        font-size: 1.5em;
+      }
     }
   }
 }

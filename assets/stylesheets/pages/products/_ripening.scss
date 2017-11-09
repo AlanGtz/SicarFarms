@@ -1,3 +1,114 @@
 .ripening {
-  
+  display: inline-block;
+  margin: 0 0 10em;
+  width: 70%;
+
+  @include large {
+    width: 100%;
+  }
+
+  @include small {
+    padding: 0 15px;
+  }
+
+  .rip-title {
+    @include section-title;
+
+    margin-bottom: 2vw;
+
+    @include medium {
+      margin-bottom: 1em;
+    }
+  }
+
+  .rip-fruit {
+    margin-right: 10%;
+    width: 30%;
+  }
+
+  .rip-info {
+    width: 60%;
+  }
+
+  .rip-fruit, .rip-info {
+    display: inline-block;
+    height: 530px;
+    position: relative;
+    vertical-align: top;
+
+    @include large {
+      height: auto;
+      margin: 0;
+      width: 80%;
+    }
+
+    @include small {
+      width: 100%;
+    }
+  }
+
+  .rip-single {
+    height: 530px;
+
+    @include large {
+      height: 430px;
+    }
+
+    @include small {
+      height: 300px;
+    }
+  }
+
+  .rip-slide {
+
+    @include small {
+      padding: 0 15px;
+    }
+  }
+
+  .rip-image {
+    height: 400px;
+    margin: auto;
+    max-width: 320px;
+
+    @include large {
+      height: 300px;
+    }
+  }
+
+  .rip-status {
+    font-family: Raleway-SemiBold;
+    font-size: 2.8em;
+    margin: 1em 0;
+  }
+
+  .rip-text {
+    @include center(false,true);
+
+    font-family: Raleway-SemiBold;
+    font-size: 2.2em;
+    text-align: left;
+
+    @include large {
+      margin-top: 2em;
+      position: relative;
+      text-align: center;
+      transform: none;
+    }
+  }
+
+  .table {
+    @include center(false,true);
+
+    @include large {
+      margin-top: 3em;
+      position: relative;
+      transform: none;
+    }
+  }
+
+  .rip-list {
+    padding-left: 1.5em;
+    text-align: left;
+  }
 }

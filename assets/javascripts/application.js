@@ -10,6 +10,7 @@ $(document).ready(function() {
   $('.history-slider').owlCarousel({
     loop:false,
     nav: true,
+    dots: false,
     navText: ['<div class="flat-left"></div>','<div class="flat-right"></div>'],
     responsive: {
       0: {
@@ -35,9 +36,28 @@ $(document).ready(function() {
     loop: true,
     items: 1,
     nav: true,
+    dots: false,
     navText: ['<div class="flat-left"></div>','<div class="flat-right"></div>']
   });
+
+  $('.rip-slider').owlCarousel({
+    loop: false,
+    items: 1,
+    nav: false,
+    dots: true,
+    mouseDrag: false,
+    touchDrag: false,
+    animateOut: 'fadeOut'
+  });
+
+  countDots();
 });
+
+function countDots() {
+  $('.owl-dot').each(function(i) {
+    $(this).addClass('dot-' + (i+1));
+  });
+}
 
 function callback(event) {
   var item = event.item.index;

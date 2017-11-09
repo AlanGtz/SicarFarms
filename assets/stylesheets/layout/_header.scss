@@ -32,7 +32,8 @@
 
   .lang-menu {
     color: $white;
-    display: inline-block;
+    //display: inline-block;
+    display: none;
     font-family: Raleway-SemiBold;
     font-size: 14px;
     text-transform: uppercase;

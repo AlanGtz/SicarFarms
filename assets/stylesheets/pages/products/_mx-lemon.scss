@@ -1,3 +1,64 @@
 .mx-lemon {
-  
+  background-color: $lemon-mx;
+  color: $white;
+  text-align: center;
+
+  .cover {
+    background-image: url('../images/min/products/mx-lemon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    @include small {
+      background-size: 90%;
+    }
+
+    @include extra-small {
+      background-size: 150%;
+    }
+  }
+
+  .presentations {
+    .pres1 { background: url('../images/min/products/carton-box1.svg') center/contain no-repeat; }
+    .pres2 { background: url('../images/min/products/carton-box2.svg') center/contain no-repeat; }
+    .pres3 { background: url('../images/min/products/carton-box3.svg') center/contain no-repeat; }
+    .pres4 { background: url('../images/min/products/carton-box4.svg') center/contain no-repeat; }
+    .pres5 { background: url('../images/min/products/carton-box5.svg') center/contain no-repeat; }
+    .pres6 { background: url('../images/min/products/sack1.svg') center/contain no-repeat; }
+    .pres7 { background: url('../images/min/products/sack2.svg') center/contain no-repeat; }
+    .pres8 { background: url('../images/min/products/sack3.svg') center/contain no-repeat; }
+    .pres9 { background: url('../images/min/products/sack4.svg') center/contain no-repeat; }
+    .pres10 { background: url('../images/min/products/plastic-box1.svg') center/contain no-repeat; }
+    .pres11 { background: url('../images/min/products/plastic-box2.svg') center/contain no-repeat; }
+    .pres12 { background: url('../images/min/products/plastic-box3.svg') center/contain no-repeat; }
+    .pres13 { background: url('../images/min/products/plastic-box4.svg') center/contain no-repeat; }
+  }
+
+  .rip-image {
+    height: 300px !important;
+  }
+
+  .rip1 { background: url('../images/min/products/mx-state1.png') center bottom/contain no-repeat; }
+  .rip2 { background: url('../images/min/products/mx-state2.png') center bottom/contain no-repeat; }
+  .rip3 { background: url('../images/min/products/mx-state3.png') center bottom/contain no-repeat; }
+  .rip4 { background: url('../images/min/products/mx-state4.png') center bottom/contain no-repeat; }
+
+  .dot-1 { background-color: $lemon-tone1; }
+  .dot-2 { background-color: $lemon-tone2; }
+  .dot-3 { background-color: $lemon-tone3; }
+  .dot-4 { background-color: $lemon-tone4; }
+
+  .table-head, .table-cell {
+    flex: 1 1 50%;
+  }
+
+  .prod-map {
+    background-image: url('../images/min/products/map-mx.svg');
+  }
+
+  @for $i from 1 through 8 {
+    .gallery#{$i} {
+      background: url('../images/min/products/gal-mx#{$i}.png') center/contain no-repeat;
+    }
+  }
 }

@@ -1,3 +1,62 @@
 .presentations {
-  
+  display: inline-block;
+  margin: 0 0 15em;
+
+  .pres-title {
+    @include section-title;
+
+    margin-bottom: 0.6em;
+  }
+
+  .pres-container {
+    padding: 0 30px;
+
+    @include large {
+      padding: 0 15px;
+    }
+  }
+
+  .pres-item {
+    background-color: $white;
+    border-radius: 4px;
+    display: inline-block;
+    height: 300px;
+    margin: 22px 17px;
+    padding: 2% 10px;
+    vertical-align: top;
+    width: 275px;
+
+    @include large {
+      height: 250px;
+      margin: 11px 8px;
+      width: 225px;
+    }
+
+    @include small {
+      height: 150px;
+      margin: 8px 7px;
+      width: 125px;
+    }
+
+    .pres-image {
+      height: 75%;
+      margin-bottom: 9%;
+      padding: 8% 11% 2%;
+    }
+
+    .pres-box {
+      height: 100%;
+      width: 100%;
+    }
+
+    .pres-name {
+      color: $grave;
+      font-family: Raleway-SemiBold;
+      font-size: 1.8em;
+
+      @include large {
+        font-size: 1.5em;
+      }
+    }
+  }
 }

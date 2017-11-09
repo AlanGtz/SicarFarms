@@ -9,6 +9,8 @@
   'abstracts/center';
 
 // 2. Vendors
+@import
+  'vendor/owl-carousel';
 
 // 3. Base stuff
 @import
@@ -19,7 +21,8 @@
 @import
   'components/video-cover',
   'components/buttons',
-  'components/titles';
+  'components/titles',
+  'components/tables';
 
 // 5. Layout-related sections
 @import
@@ -67,7 +70,8 @@
   'pages/products/sizes',
   'pages/products/nutritional',
   'pages/products/production',
-  'pages/products/gallery';
+  'pages/products/gallery',
+  'pages/contact';
 
 // 7. Themes
 @import

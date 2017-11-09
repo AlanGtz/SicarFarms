@@ -1,0 +1,56 @@
+.table {
+  border-spacing: 10px;
+  font-family: Raleway-SemiBold;
+  width: 100%;
+
+  @include small {
+    border-spacing: 3px;
+  }
+
+  &.flex-table {
+    .table-row {
+      display: flex;
+    }
+
+    .table-head, .table-cell {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .table-head, .table-cell {
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10.5px 18px;
+
+    @include extra-small {
+      font-size: 14px;
+      margin: 1.5px;
+      padding: 7px 9px;
+    }
+  }
+
+  .table-head {
+    background-color: $table-head;
+    color: $white;
+  }
+
+  .table-cell {
+    background-color: $table-cell;
+    color: $table-text;
+  }
+
+  .left-cell {
+    text-align: left;
+  }
+
+  .small-cell {
+    font-size: 14px;
+
+    @include extra-small {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.owl-dots {
+
+  .owl-dot {
+    border: solid 4px $white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    margin: 5px 20px;
+    transition: 0.2s ease;
+    vertical-align: middle;
+    width: 30px;
+
+    @include extra-large {
+      margin: 5px 10px;
+    }
+
+    &.active {
+      height: 40px;
+      margin: 0 15px;
+      width: 40px;
+
+      @include extra-large {
+        margin: 0 5px;
+      }
+    }
+  }
+}

@@ -1,3 +1,34 @@
 .tamarind {
-  
+  background-color: $tamarind;
+  color: $white;
+  text-align: center;
+
+  .cover {
+    background-image: url('../images/min/products/tamarind.png');
+    background-position: 55% center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    @include small {
+      background-size: 90%;
+    }
+
+    @include extra-small {
+      background-position: 40% center;
+      background-size: 150%;
+    }
+  }
+
+  .presentations {
+    .pres1 { background: url('../images/min/products/carton-box5.svg') center/contain no-repeat; }
+    .pres2 { background: url('../images/min/products/carton-box5.svg') center/contain no-repeat; }
+  }
+
+  .rip-single {
+    background: url('../images/min/products/rip-tamarind.png') center/contain no-repeat;
+  }
+
+  .prod-map {
+    background-image: url('../images/min/products/map-tamarind.svg');
+  }
 }

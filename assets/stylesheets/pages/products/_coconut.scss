@@ -1,3 +1,39 @@
 .coconut {
-  
+  background-color: $coconut;
+  color: $white;
+  text-align: center;
+
+  .cover {
+    background-image: url('../images/min/products/coconut.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    @include small {
+      background-size: 90%;
+    }
+
+    @include extra-small {
+      background-size: 150%;
+    }
+  }
+
+  .presentations {
+    .pres1 { background: url('../images/min/products/sack5.svg') center/contain no-repeat; }
+    .pres2 { background: url('../images/min/products/plastic-box2.svg') center/contain no-repeat; }
+  }
+
+  .rip-single {
+    background: url('../images/min/products/rip-coconut.png') center/contain no-repeat;
+  }
+
+  .prod-map {
+    background-image: url('../images/min/products/map-mx.svg');
+  }
+
+  @for $i from 1 through 4 {
+    .gallery#{$i} {
+      background: url('../images/min/products/gal-coconut#{$i}.png') center/contain no-repeat;
+    }
+  }
 }

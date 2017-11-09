@@ -1,3 +1,94 @@
 .production {
-  
+  font-family: Raleway-SemiBold;
+  margin: 0 0 10em;
+
+  .prod-frame {
+    display: inline-block;
+    height: 50vw;
+    position: relative;
+    width: 90%;
+
+    @include large {
+      height: auto;
+      padding: 0 15px;
+      width: 100%;
+    }
+  }
+
+  .prod-wrapper {
+    bottom: 0;
+    left: 0;
+    min-width: 290px;
+    position: absolute;
+    text-align: left;
+    width: 45%;
+    z-index: 1;
+
+    @include large {
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+
+    .prod-title {
+      font-size: 7.6em;
+      line-height: 1em;
+
+      @include extra-large {
+        font-size: 5em;
+      }
+
+      @include large {
+        @include section-title;
+      }
+    }
+
+    .prod-text {
+      font-size: 1.8em;
+      margin-top: 0.7em;
+
+      @include large {
+        display: inline-block;
+        margin: 2em 0;
+        max-width: 600px;
+      }
+    }
+  }
+
+  .prod-map {
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 95%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+
+    @include large {
+      background-position: center;
+      height: 65vw;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .prod-button {
+    background-color: $white;
+    border-radius: 100px;
+    color: $leaf;
+    display: inline-block;
+    font-size: 2em;
+    margin-top: 6em;
+    padding: 18px 36px;
+
+    @include large {
+      margin-top: 3em;
+    }
+
+    &:hover {
+      background-color: $leaf;
+      color: $white;
+    }
+  }
 }
