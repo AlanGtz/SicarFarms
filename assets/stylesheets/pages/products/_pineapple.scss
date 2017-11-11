@@ -41,7 +41,7 @@
 
   @for $i from 1 through 4 {
     .gallery#{$i} {
-      background: url('../images/min/products/gal-pineapple#{$i}.png') center/contain no-repeat;
+      background: url('../images/min/products/gal-pine#{$i}.jpg') center/contain no-repeat;
     }
   }
 }

@@ -73,7 +73,7 @@
 
   @for $i from 1 through 4 {
     .gallery#{$i} {
-      background: url('../images/min/products/gal-tomatoe#{$i}.png') center/contain no-repeat;
+      background: url('../images/min/products/gal-tom#{$i}.jpg') center/contain no-repeat;
     }
   }
 }

@@ -56,9 +56,15 @@
     background-image: url('../images/min/products/map-ps.svg');
   }
 
-  @for $i from 1 through 8 {
+  @for $i from 1 through 4 {
     .gallery#{$i} {
       background: url('../images/min/products/gal-ps#{$i}.png') center/contain no-repeat;
+    }
+  }
+
+  @for $i from 5 through 8 {
+    .gallery#{$i} {
+      background: url('../images/min/products/gal-ps#{$i}.jpg') center/contain no-repeat;
     }
   }
 }
