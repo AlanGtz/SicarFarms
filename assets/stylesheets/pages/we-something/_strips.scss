@@ -11,6 +11,7 @@
   @include small {
     background-size: cover;
     margin: 10em 0;
+    overflow: hidden;
   }
 
   &.strip-right {
@@ -45,6 +46,11 @@
       @include extra-large {
         padding: 0 5em;
       }
+
+      @include small {
+        background-color: $polarized;
+        box-shadow: 0 0 5em 20em $polarized;
+      }
     }
 
     .strip-title {
@@ -55,6 +61,18 @@
 
       @include small {
         text-align: center;
+      }
+
+      &.strip-override {
+        font-size: 6em;
+
+        @include medium {
+          font-size: 5em;
+        }
+
+        @include small {
+          font-size: 4.5em;
+        }
       }
     }
 
