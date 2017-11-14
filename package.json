@@ -2,9 +2,9 @@
   "name": "sicarfarms",
   "version": "1.0.0",
   "description": "It's all about fresh produce",
-  "main": "app.js",
+  "main": "application.js",
   "scripts": {
-    "test": "Hello World!"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
