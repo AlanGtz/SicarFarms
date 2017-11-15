@@ -111,4 +111,35 @@
     padding-left: 1.5em;
     text-align: left;
   }
+
+  &.tamarind {
+    .rip-fruit {
+      margin: 0;
+      width: 50%;
+    }
+
+    .rip-info {
+      margin-right: 10%;
+      width: 40%;
+    }
+
+    .rip-fruit, .rip-info {
+      float: right;
+
+      @include large {
+        float: none;
+        height: auto;
+        margin: 0;
+        width: 80%;
+      }
+
+      @include small {
+        width: 100%;
+      }
+    }
+
+    .rip-single {
+      background: url('../images/min/products/rip-tamarind.png') center/contain no-repeat;
+    }
+  }
 }
