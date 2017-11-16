@@ -154,6 +154,7 @@ $mfp-use-visuallyhidden: false !default;                      // Hide content fr
     cursor: -moz-zoom-out;
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
+    cursor: pointer;
   }
 }
 .mfp-zoom {
@@ -314,6 +315,7 @@ button {
   top: 0;
   right: 0;
   color: $mfp-controls-text-color;
+  font-family: Raleway-Bold;
   font-size: 12px;
   line-height: 18px;
   white-space: nowrap;
@@ -375,7 +377,6 @@ button {
     }
     &:before {
       margin-left: 25px;
-      border-right: 27px solid $mfp-controls-border-color;
     }
   }
 
@@ -386,7 +387,6 @@ button {
       margin-left: 39px
     }
     &:before {
-      border-left: 27px solid $mfp-controls-border-color;
     }
   }
 }
@@ -580,4 +580,22 @@ button {
     padding-left: $mfp-popup-padding-left-mobile;
     padding-right: $mfp-popup-padding-left-mobile;
   }
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
 }
