@@ -28,4 +28,86 @@
   .table-cell {
     color: $ashes;
   }
+
+  &.tamarind {
+    display: inline-block;
+    margin: 0 0 10em;
+    width: 70%;
+
+    @include large {
+      width: 100%;
+    }
+
+    @include small {
+      padding: 0 15px;
+    }
+
+    .sizes-title {
+      @include section-title;
+
+      margin-bottom: 2vw;
+
+      @include medium {
+        margin-bottom: 1em;
+      }
+    }
+
+    .sizes-fruit {
+      margin: 0;
+      width: 50%;
+    }
+
+    .sizes-info {
+      margin-right: 10%;
+      width: 40%;
+    }
+
+    .sizes-fruit, .sizes-info {
+      display: inline-block;
+      float: right;
+      height: 530px;
+      position: relative;
+      vertical-align: top;
+
+      @include large {
+        float: none;
+        height: auto;
+        margin: 0;
+        width: 80%;
+      }
+
+      @include small {
+        width: 100%;
+      }
+    }
+
+    .sizes-single {
+      background: url('../images/min/products/size-tamarind.png') center/contain no-repeat;
+      height: 530px;
+
+      @include large {
+        height: 430px;
+      }
+
+      @include small {
+        height: 300px;
+      }
+    }
+
+    .sizes-text {
+      @include center(false,true);
+
+      font-family: Raleway-SemiBold;
+      font-size: 2.2em;
+      left: 0;
+      text-align: left;
+
+      @include large {
+        margin-top: 2em;
+        position: relative;
+        text-align: center;
+        transform: none;
+      }
+    }
+  }
 }

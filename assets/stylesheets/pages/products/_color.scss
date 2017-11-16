@@ -1,0 +1,77 @@
+.color {
+  display: inline-block;
+  margin: 0 0 10em;
+  width: 70%;
+
+  @include large {
+    width: 100%;
+  }
+
+  @include small {
+    padding: 0 15px;
+  }
+
+  .color-title {
+    @include section-title;
+
+    margin-bottom: 2vw;
+
+    @include medium {
+      margin-bottom: 1em;
+    }
+  }
+
+  .color-fruit {
+    width: 50%;
+  }
+
+  .color-info {
+    margin-left: 10%;
+    width: 40%;
+  }
+
+  .color-fruit, .color-info {
+    display: inline-block;
+    height: 530px;
+    position: relative;
+    vertical-align: top;
+
+    @include large {
+      height: auto;
+      margin: 0;
+      width: 80%;
+    }
+
+    @include small {
+      width: 100%;
+    }
+  }
+
+  .color-single {
+    background: url('../images/min/products/color-tamarind.png') center/contain no-repeat;
+    height: 530px;
+
+    @include large {
+      height: 430px;
+    }
+
+    @include small {
+      height: 300px;
+    }
+  }
+
+  .color-text {
+    @include center(false,true);
+
+    font-family: Raleway-SemiBold;
+    font-size: 2.2em;
+    text-align: left;
+
+    @include large {
+      margin-top: 2em;
+      position: relative;
+      text-align: center;
+      transform: none;
+    }
+  }
+}

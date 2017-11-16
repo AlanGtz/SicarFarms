@@ -1,8 +1,8 @@
 var express = require('express');
        i18n = require('i18n');
 
-const hostname = '127.0.0.1';
-          port = 5000;
+const hostname = '0.0.0.0';
+          port = 8080;
 
 i18n.configure({
   locales:['es', 'en'],
@@ -74,9 +74,14 @@ app.get('/contact', function(req, res) {
   res.render('contact');
 });
 
-app.get('/news', function(req, res) {
-  res.render('news');
+app.get('/blog', function(req, res) {
+  res.render('blog');
 });
+
+app.get('/post', function(req, res) {
+  res.render('post');
+});
+
 
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);

@@ -1,0 +1,137 @@
+.blog {
+  @include linear-gradient($sicar-green, $lime);
+
+  .blog-cover {
+    padding: 12em 8em 8em;
+
+    @include large {
+      padding: 10em 4em 4em;
+    }
+
+    @include small {
+      padding: 12em 2em 2em;
+    }
+
+    @include extra-small {
+      padding: 8em 15px 4em;
+    }
+
+    .blog-frame {
+      background: $leaf url('../images/min/blog-cover.jpg') center/cover no-repeat;
+      height: 30vw;
+      position: relative;
+
+      @include small {
+        height: 50vw;
+      }
+    }
+
+    .blog-title {
+      @include center(false,true);
+      @include section-title;
+
+      color: $white;
+      font-family: Raleway-SemiBold;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .blog-content {
+    text-align: center;
+  }
+
+  .blog-subtitle {
+    color: $white;
+    font-family: Raleway-SemiBold;
+    font-size: 5em;
+
+    @include small {
+      font-size: 4em;
+    }
+  }
+
+  .news {
+    align-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 2em 0 5em;
+    width: 1600px;
+
+    @media (max-width: 1732px){
+      width: 1280px;
+    }
+
+    @media (max-width: 1412px){
+      width: 960px;
+    }
+
+    @media (max-width: 1092px){
+      width: 640px;
+    }
+
+    @media (max-width: 682px){
+      width: 320px;
+    }
+  }
+
+  .news-item {
+    box-shadow: 0 1em 3em -1em $polarized;
+    border-radius: 4px;
+    color: $black;
+    display: inline-block;
+    margin: 15px;
+    overflow: hidden;
+    text-align: left;
+    width: 290px;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    .news-image {
+      background-color: $stone;
+      height: 160px;
+    }
+
+    .news-title {
+      background-color: $white;
+      font-family: Raleway-SemiBold;
+      font-size: 18px;
+      padding: 12px 12px 6px;
+    }
+
+    .news-excerpt {
+      background-color: $white;
+      font-family: Raleway-Regular;
+      font-size: 14px;
+      height: 53px;
+      padding: 4px 12px;
+      overflow: hidden;
+    }
+
+    .news-info {
+      background-color: $white;
+      color: $stone;
+      font-family: Raleway-Regular;
+      font-size: 13px;
+      padding: 6px 12px 12px;
+    }
+  }
+
+  .news-more {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Raleway-Bold;
+    font-size: 2.8em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $leaf;
+    }
+  }
+}

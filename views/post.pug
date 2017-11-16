@@ -1,0 +1,16 @@
+extends layouts/application.pug
+block content
+  .post#firstSection
+    .post-cover
+      .post-gradient
+      .post-frame
+    h1.post-title
+    .post-wrapper
+      .post-content
+        p.post-date
+        p.post-text
+      .post-aside
+        p.post-label Últimos posts
+        .post-last
+      a.post-back(href="/blog") Regresar
+  include layouts/footer-simple.pug
