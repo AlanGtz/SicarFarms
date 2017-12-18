@@ -2,13 +2,14 @@
   text-align: center;
 
   .prods-cover {
-    background-color: $sicar-green;
+    background: $sicar-green url('../images/min/products/prods-cover.png') center bottom/cover no-repeat;
     height: 100vh;
     position: relative;
 
     .prods-title {
       @include center(true,true);
 
+      text-shadow: 1px 5px 5px $polarized;
       color: $white;
       font-family: Raleway-Bold;
       font-size: 10vw;

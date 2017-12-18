@@ -20,6 +20,14 @@
     }
   }
 
+  .select-title {
+    color: $leaf;
+    font-family: Raleway-SemiBold;
+    font-size: 2.6em;
+    margin-bottom: 1.8em;
+    text-align: center;
+  }
+
   .contact-form {
 
     .form-text {
@@ -28,18 +36,6 @@
 
     .form-select {
       width: 35%;
-
-      .form-input {
-        appearance: none;
-        background-image: url('../images/min/icons/dropdown.svg');
-        background-position: calc(100% - 30px) center;
-        background-repeat: no-repeat;
-        background-size: 22px 11px;
-
-        @include small {
-          background-position: calc(100% - 10px) center;
-        }
-      }
     }
 
     .form-subject {
@@ -102,6 +98,58 @@
 
       &:hover {
         border: solid 2px $lemon-ps;
+      }
+    }
+  }
+
+  .form-open {
+    background-color: $white;
+    background-image: url('../images/min/icons/dropdown.svg');
+    background-position: calc(100% - 30px) center;
+    background-repeat: no-repeat;
+    background-size: 22px 11px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.17);
+    color: $ashes;
+    display: block;
+    font-family: Raleway-Regular;
+    font-size: 1.6em;
+    height: 3.125em;
+    line-height: 3.125em;
+    padding: 0 30px;
+
+    @include small {
+      background-position: calc(100% - 10px) center;
+      padding: 0 10px;
+    }
+  }
+
+  .form-popup {
+    @include center(true,true);
+
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.2);
+    max-width: 370px;
+    padding: 30px 35px;
+    width: 95%;
+
+    .select-close {
+      background-color: $sicar-green;
+      border-radius: 4px;
+      color: $white;
+      font-family: Raleway-Regular;
+      font-size: 1.6em;
+      height: auto;
+      line-height: 2.5em;
+      margin: 0 auto;
+      opacity: 1;
+      padding: 0 3em;
+      position: relative;
+      width: auto;
+
+      &:hover {
+        background-color: $leaf;
       }
     }
   }

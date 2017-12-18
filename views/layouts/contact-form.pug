@@ -1,20 +1,34 @@
 .footer-contact
   h3.contact-title Me interesa
-  form.contact-form
+  form.contact-form(method="post" action="contact/send")
     .form-text
-      input.form-input(type="text" name="nombre" id="nombre" placeholder="Nombre" required)
+      input.form-input#name(type="text" name="name" placeholder="Nombre" required)
     .form-text
-      input.form-input(type="email" name="email" id="email" placeholder="E-mail" required)
+      input.form-input#email(type="email" name="email" placeholder="E-mail" required)
     .form-select
-      select.form-input(name="interest" id="interest" placeholder="Fruta" required)
-        option(value="" default hidden) Fruta
-        option(value="lemon-mx") Limón Mexicano
-        option(value="lemon-ps") Limón Persa
-        option(value="tomatoe") Tomate Roma
-        option(value="pineapple") Piña Miel (MD2)
-        option(value="coconut") Coco Destopado
-        option(value="tamarind") Tamarindo
+      a.form-open.open-select(href="#" data-mfp-src="#form-popup") Frutas
+      .form-popup.mfp-hide#form-popup
+        p.select-title Selecciona las frutas que te interesan:
+        label.select-container Limón Mexicano
+          input.checkbox(type="checkbox" name="fruits[0]" value="Limon Mexicano")
+          span.checkmark
+        label.select-container Limón Persa
+          input.checkbox(type="checkbox" name="fruits[1]" value="Limon Persa")
+          span.checkmark
+        label.select-container Tomate Roma
+          input.checkbox(type="checkbox" name="fruits[2]" value="Tomate Roma")
+          span.checkmark
+        label.select-container Piña Miel (MD2)
+          input.checkbox(type="checkbox" name="fruits[3]" value="Piña Miel (MD2)")
+          span.checkmark
+        label.select-container Coco Destopado
+          input.checkbox(type="checkbox" name="fruits[4]" value="Coco Destopado")
+          span.checkmark
+        label.select-container Tamarindo
+          input.checkbox(type="checkbox" name="fruits[5]" value="Tamarindo")
+          span.checkmark
+        button.select-close.mfp-close Confirmar
     .form-subject
-      input.form-input(type="text" name="subject" id="subject" placeholder="Asunto" required)
+      input.form-input#subject(type="text" name="subject" placeholder="Asunto" required)
     .form-btn
-      input.form-submit(type="submit" name="submit" value="Enviar")
+      input.form-submit#submit(type="submit" name="submit" value="Enviar")

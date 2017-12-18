@@ -20,8 +20,8 @@
   .talk-question, .talk-button {
     display: inline-block;
     font-family: Raleway-SemiBold;
-    font-size: 2.8em;
-    margin: 0 8px;
+    font-size: 2.2em;
+    margin: 0 0.55em;
     vertical-align: middle;
 
     @include extra-small {
@@ -33,7 +33,9 @@
     background-color: $sicar-green;
     border-radius: 5px;
     color: $white;
-    padding: 8.5px 25.5px;
+    margin-top: 1em;
+    min-width: 9.773em;
+    padding: 12px 24px;
 
     &:hover {
       background-color: $pomelo;
