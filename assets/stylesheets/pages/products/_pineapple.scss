@@ -23,6 +23,14 @@
     .pres2 { background: url('../images/min/products/carton-box6.svg') center/contain no-repeat; }
   }
 
+  .owl-dot {
+    margin: 5px 8px;
+
+    &.active {
+      margin: 0 3px;
+    }
+  }
+
   .rip1 { background: url('../images/min/products/pineapple-state1.png') center bottom/contain no-repeat; }
   .rip2 { background: url('../images/min/products/pineapple-state2.png') center bottom/contain no-repeat; }
   .rip3 { background: url('../images/min/products/pineapple-state3.png') center bottom/contain no-repeat; }
