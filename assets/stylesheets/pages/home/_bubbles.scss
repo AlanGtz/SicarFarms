@@ -59,7 +59,7 @@
     font-size: 1.8em;
     text-transform: uppercase;
 
-    &:visited {
+    &:link, &:active, &:visited {
       color: $white;
     }
   }
