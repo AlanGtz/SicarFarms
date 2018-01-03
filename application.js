@@ -23,8 +23,8 @@ app.post('/contact/send', urlencodedParser, function(req, res) {
     port: 587,
     secure: false,
     auth: {
-      user: 'ahgv1195@gmail.com',
-      pass: '#951111Chivas'
+      user: 'notificaciones.sicar@gmail.com',
+      pass: 'tribe.cx'
     }
   });
 
