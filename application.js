@@ -44,7 +44,7 @@ app.post('/contact/send', urlencodedParser, function(req, res) {
       return console.log(error);
     } else {
       console.log('Message sent: %s', info.messageId);
-      res.render('index');
+      res.redirect('back');
     }
   });
 });
