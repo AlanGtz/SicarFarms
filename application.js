@@ -4,6 +4,9 @@ var express = require('express');
 
 const PORT = process.env.PORT || 8080
 nodemailer = require('nodemailer');
+     crypt = require('./crypt');
+
+const encryptedPassword = '0b63bfcf3ba88077';
 
 var app = express();
 
@@ -24,7 +27,7 @@ app.post('/contact/send', urlencodedParser, function(req, res) {
     secure: false,
     auth: {
       user: 'notificaciones.sicar@gmail.com',
-      pass: 'tribe.cx'
+      pass: crypt.decrypt(encryptedPassword)
     }
   });
 
@@ -33,7 +36,7 @@ app.post('/contact/send', urlencodedParser, function(req, res) {
     to: 'alan.gutierrez@tribe.cx',
     subject: req.body.subject,
     text: 'Tienes un mensaje con los siguientes detalles... Nombre: '+req.body.name+'Email: '+req.body.email,
-    html: '<p>Tienes un mensaje con los siguientes detalles:</p><ul><li>Nombre: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>'+req.body.fruits+'</li></ul>'
+    html: '<p>Tienes un mensaje con los siguientes detalles:</p><ul><li>Nombre: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>'+req.body.fruit+'</li></ul>'
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -41,8 +44,6 @@ app.post('/contact/send', urlencodedParser, function(req, res) {
       return console.log(error);
     }
     console.log('Message sent: %s', info.messageId);
-
-    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
   });
 });
 
