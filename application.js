@@ -35,15 +35,17 @@ app.post('/contact/send', urlencodedParser, function(req, res) {
     from: '"SiCarFarms 🍋" <contacto@sicarfarms.com>',
     to: 'alan.gutierrez@tribe.cx',
     subject: req.body.subject,
-    text: 'Tienes un mensaje con los siguientes detalles... Nombre: '+req.body.name+'Email: '+req.body.email,
-    html: '<p>Tienes un mensaje con los siguientes detalles:</p><ul><li>Nombre: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>'+req.body.fruit+'</li></ul>'
+    text: 'Tienes un mensaje con los siguientes detalles... Nombre: '+req.body.name+' Email: '+req.body.email+' Interés: '+req.body.fruits,
+    html: '<p>Tienes un mensaje con los siguientes detalles:</p><ul><li>Nombre: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>Interés: '+req.body.fruits+'</li></ul>'
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return console.log(error);
+    } else {
+      console.log('Message sent: %s', info.messageId);
+      res.render('/');
     }
-    console.log('Message sent: %s', info.messageId);
   });
 });
 
