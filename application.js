@@ -33,7 +33,7 @@ app.post('/contact/send', urlencodedParser, function(req, res) {
 
   let mailOptions = {
     from: '"SiCarFarms 🍋" <contacto@sicarfarms.com>',
-    to: 'alan.gutierrez@tribe.cx',
+    to: 'ventas@sicar.com.mx',
     subject: req.body.subject,
     text: 'Tienes un mensaje con los siguientes detalles... Nombre: '+req.body.name+' Email: '+req.body.email+' Interés: '+req.body.fruits,
     html: '<p>Tienes un mensaje con los siguientes detalles:</p><ul><li>Nombre: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>Interés: '+req.body.fruits+'</li></ul>'
