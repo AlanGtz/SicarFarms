@@ -87,8 +87,12 @@
       max-width: 100%;
     }
 
-    p {
+    p, iframe {
       margin-top: 10px;
+    }
+
+    span {
+      margin: 20px 0;
     }
 
     a {
