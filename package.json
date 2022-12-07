@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/AlanGtz/SicarFarms#readme",
   "dependencies": {
-    "express": "^4.16.1",
+    "express": "^4.17.3",
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
     "i18n": "^0.8.3",
